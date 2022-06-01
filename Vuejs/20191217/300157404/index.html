@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -151,21 +151,21 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+    <a href="/categories/" rel="section">标签<i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -178,7 +178,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -212,7 +212,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
     <link itemprop="mainEntityOfPage" href="http://lineargenius.github.io/Vuejs/20191217/300157404/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -309,7 +309,7 @@
 <h3 id="v-text-—-雙花括號以外的資料綁定法"><a href="#v-text-—-雙花括號以外的資料綁定法" class="headerlink" title="v-text — 雙花括號以外的資料綁定法"></a>v-text — 雙花括號以外的資料綁定法</h3><p><code>v-text</code> 相當於 <code>.textContent</code>，上面都是用雙花括號包住資料的特性名稱來將 Model 渲染到網頁上，除了這個方法以外，也可以在要塞入 Model 的 HTML 元素上，加上 <code>v-text</code> 屬性來連接 Model 內容。</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-text</span>=<span class="string">"message"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="v-html-—-傳入-HTML-標籤"><a href="#v-html-—-傳入-HTML-標籤" class="headerlink" title="v-html — 傳入 HTML 標籤"></a>v-html — 傳入 HTML 標籤</h3><p><code>v-html</code> 相當於 <code>.innerHTML</code>，如果想渲染到網頁上的 Model 含有 HTML 標籤，就要在要插入資料的元素上使用 <code>v-html</code> 屬性並與 Model 綁定，畫面上才會正確解讀 HTML 格式。同樣的內容用雙花括號跟 <code>v-text</code> 顯示出來的會是一串字串，而沒辦法正確渲染出 HTML 格式。</p>
+<h3 id="v-html-—-傳入-HTML-标签"><a href="#v-html-—-傳入-HTML-标签" class="headerlink" title="v-html — 傳入 HTML 标签"></a>v-html — 傳入 HTML 标签</h3><p><code>v-html</code> 相當於 <code>.innerHTML</code>，如果想渲染到網頁上的 Model 含有 HTML 标签，就要在要插入資料的元素上使用 <code>v-html</code> 屬性並與 Model 綁定，畫面上才會正確解讀 HTML 格式。同樣的內容用雙花括號跟 <code>v-text</code> 顯示出來的會是一串字串，而沒辦法正確渲染出 HTML 格式。</p>
 <iframe src="https://codepen.io/gretema/embed/vYYywrG?height=265&theme-id=default&default-tab=html,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
 
 <h3 id="v-bind-—-以參數更新-HTML-屬性"><a href="#v-bind-—-以參數更新-HTML-屬性" class="headerlink" title="v-bind — 以參數更新 HTML 屬性"></a>v-bind — 以參數更新 HTML 屬性</h3><p>雙花括號中填入資料特性名稱的方法，並不適用於 HTML <strong>屬性</strong>，因此我們應該把 <code>v-bind:</code> 加在 HTML 屬性前面，且在屬性對應的值中放置<strong>參數</strong>（資料特性名稱），並在 Model 中定義要傳入的值。<code>v-bind</code> 的縮寫是去掉 <code>v-bind</code>、只留下一個冒號 <code>:</code>。</p>
@@ -423,7 +423,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue-js-簡介"><span class="nav-number">1.</span> <span class="nav-text">Vue.js 簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#從建立應用程式開始"><span class="nav-number">2.</span> <span class="nav-text">從建立應用程式開始</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本指令"><span class="nav-number">3.</span> <span class="nav-text">基本指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#v-model-—-從網頁上更動-JS-資料"><span class="nav-number">3.1.</span> <span class="nav-text">v-model — 從網頁上更動 JS 資料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-text-—-雙花括號以外的資料綁定法"><span class="nav-number">3.2.</span> <span class="nav-text">v-text — 雙花括號以外的資料綁定法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-html-—-傳入-HTML-標籤"><span class="nav-number">3.3.</span> <span class="nav-text">v-html — 傳入 HTML 標籤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-bind-—-以參數更新-HTML-屬性"><span class="nav-number">3.4.</span> <span class="nav-text">v-bind — 以參數更新 HTML 屬性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#v-model-vs-v-bind"><span class="nav-number">3.4.1.</span> <span class="nav-text">v-model vs v-bind</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-for-—-呈現資料列表"><span class="nav-number">3.5.</span> <span class="nav-text">v-for — 呈現資料列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-if-—-擷取部分資訊"><span class="nav-number">3.6.</span> <span class="nav-text">v-if — 擷取部分資訊</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue-js-簡介"><span class="nav-number">1.</span> <span class="nav-text">Vue.js 簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#從建立應用程式開始"><span class="nav-number">2.</span> <span class="nav-text">從建立應用程式開始</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本指令"><span class="nav-number">3.</span> <span class="nav-text">基本指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#v-model-—-從網頁上更動-JS-資料"><span class="nav-number">3.1.</span> <span class="nav-text">v-model — 從網頁上更動 JS 資料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-text-—-雙花括號以外的資料綁定法"><span class="nav-number">3.2.</span> <span class="nav-text">v-text — 雙花括號以外的資料綁定法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-html-—-傳入-HTML-标签"><span class="nav-number">3.3.</span> <span class="nav-text">v-html — 傳入 HTML 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-bind-—-以參數更新-HTML-屬性"><span class="nav-number">3.4.</span> <span class="nav-text">v-bind — 以參數更新 HTML 屬性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#v-model-vs-v-bind"><span class="nav-number">3.4.1.</span> <span class="nav-text">v-model vs v-bind</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-for-—-呈現資料列表"><span class="nav-number">3.5.</span> <span class="nav-text">v-for — 呈現資料列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-if-—-擷取部分資訊"><span class="nav-number">3.6.</span> <span class="nav-text">v-if — 擷取部分資訊</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -452,7 +452,7 @@
             <a href="/tags/">
           
         <span class="site-state-item-count">52</span>
-        <span class="site-state-item-name">標籤</span></a>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>

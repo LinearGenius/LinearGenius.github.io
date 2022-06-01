@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -152,21 +152,21 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+    <a href="/categories/" rel="section">标签<i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -179,7 +179,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -213,7 +213,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
     <link itemprop="mainEntityOfPage" href="http://lineargenius.github.io/javascript/20200504/221423942/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -383,7 +383,7 @@
 <h3 id="善用方式"><a href="#善用方式" class="headerlink" title="善用方式"></a>善用方式</h3><p>在進入箭頭函式之前，先把要指向的物件（<code>this</code>）用變數儲存起來。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> antie = &#123;</span><br><span class="line">  name: <span class="string">'漂亮阿姨'</span>,</span><br><span class="line">  callname() &#123;</span><br><span class="line">    <span class="keyword">var</span> vm = <span class="keyword">this</span>;</span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(vm, vm.name);</span><br><span class="line">    &#125;, <span class="number">10</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="字串模板"><a href="#字串模板" class="headerlink" title="字串模板"></a>字串模板</h2><p>各位在用 <code>innerHTML</code> 組字串時會不會感到很痛苦呢？我承認我會，因為各種標籤名、文字、加號、單雙引號，全部亂糟糟地都寫在一起，真 D 會讓人眼花啊！</p>
+<h2 id="字串模板"><a href="#字串模板" class="headerlink" title="字串模板"></a>字串模板</h2><p>各位在用 <code>innerHTML</code> 組字串時會不會感到很痛苦呢？我承認我會，因為各種标签名、文字、加號、單雙引號，全部亂糟糟地都寫在一起，真 D 會讓人眼花啊！</p>
 <p>還好，在ES6有新的寫法，可以讓我們好過一點。</p>
 <h3 id="基本用法-2"><a href="#基本用法-2" class="headerlink" title="基本用法"></a>基本用法</h3><p>假設我們要在一個 <code>&lt;ul&gt;&lt;li&gt;</code> 裡放入圖片：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// HTML</span></span><br><span class="line">&lt;ul <span class="class"><span class="keyword">class</span></span>=<span class="string">"list"</span>&gt;</span><br><span class="line">  &lt;li&gt;</span><br><span class="line">    &lt;img src=<span class="string">"logo.png"</span>&gt;</span><br><span class="line">  &lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">&lt;/u</span>l&gt;</span><br></pre></td></tr></table></figure>
@@ -537,7 +537,7 @@
             <a href="/tags/">
           
         <span class="site-state-item-count">52</span>
-        <span class="site-state-item-name">標籤</span></a>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -154,21 +154,21 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+    <a href="/categories/" rel="section">标签<i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -181,7 +181,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -215,7 +215,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
     <link itemprop="mainEntityOfPage" href="http://lineargenius.github.io/Vuejs/20191220/3720178681/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -295,7 +295,7 @@
 <h2 id="在-Vue-根實例上方宣告一個元件"><a href="#在-Vue-根實例上方宣告一個元件" class="headerlink" title="在 Vue 根實例上方宣告一個元件"></a>在 Vue 根實例上方宣告一個元件</h2><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">Vue</span><span class="selector-class">.component</span>(<span class="string">'自定義元件名稱'</span>,&#123;</span><br><span class="line">  <span class="attribute">template</span>: <span class="string">'# template 的 id 名稱'</span>,</span><br><span class="line">  <span class="attribute">props</span>: [<span class="string">'取得 data 資料的屬性名'</span>]</span><br><span class="line">  <span class="comment">// 之後要用這裡的資料屬性名稱在 HTML 上設定 v-bind，就能得到上層的資料</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 範例</span></span><br><span class="line"><span class="selector-tag">Vue</span><span class="selector-class">.component</span>(<span class="string">'photo'</span>,&#123;</span><br><span class="line">  <span class="attribute">props</span>: [<span class="string">'imgUrl'</span>],</span><br><span class="line">  <span class="attribute">template</span>: <span class="string">'#photo'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
 <p>接下來傳遞資料的方式可以選擇靜態傳遞或動態傳遞。</p>
-<h2 id="靜態與動態傳入數值差異"><a href="#靜態與動態傳入數值差異" class="headerlink" title="靜態與動態傳入數值差異"></a>靜態與動態傳入數值差異</h2><p>加在 HTML 標籤上的屬性可以分為靜態跟動態兩種，沒有設定 <code>v-bind</code> 的屬性為靜態，有設定 <code>v-bind</code> 的屬性為動態。</p>
+<h2 id="靜態與動態傳入數值差異"><a href="#靜態與動態傳入數值差異" class="headerlink" title="靜態與動態傳入數值差異"></a>靜態與動態傳入數值差異</h2><p>加在 HTML 标签上的屬性可以分為靜態跟動態兩種，沒有設定 <code>v-bind</code> 的屬性為靜態，有設定 <code>v-bind</code> 的屬性為動態。</p>
 <p>靜態屬性的值一律會轉為字串型別，動態屬性的值則不一定是字串。</p>
 <h3 id="靜態傳遞"><a href="#靜態傳遞" class="headerlink" title="靜態傳遞"></a>靜態傳遞</h3><p><code>&lt;photo img-url=&quot;圖片的網址&quot;&gt;&lt;/photo&gt;</code><br>原本在元件內的 <code>props</code> 值為 <code>imgUrl</code>，放到 HTML 中時要把駝峰改成 <code>-</code> 。<br><code>img-url</code>的值（圖片網址）會透過 <code>x-template</code> 中 <code>:src=&quot;imgUrl&quot;</code> 而跑到元件 <code>props</code> 裡。</p>
 <h3 id="動態傳遞"><a href="#動態傳遞" class="headerlink" title="動態傳遞"></a>動態傳遞</h3><p><code>&lt;photo :img-url=&quot;url&quot;&gt;&lt;/photo&gt;</code><br>這裡的 <code>url</code> 作為與元件 <code>props</code> <code>imgUrl</code> 綁定的值，同時代表的是根實例 <code>data</code> 物件中的 <code>url</code> 特性，因此會把 <code>url</code> 中的圖片網址帶進 <code>props</code> 裡面。</p>
@@ -313,7 +313,7 @@
 <p>也就是說，兩個變數都是指向同一個實體。</p>
 <p>所以，當我們在畫面上修改資料，會更改到 <code>props</code> 的值，甚至連 Vue 實例的 <code>data</code> 物件也會跟著被改變。</p>
 <p>那為何單向數據流無法像這樣傳遞呢？因為單向數據流傳遞的是<strong>一般字串</strong>，所以<u>無法像物件這樣傳遞參考的特性</u>。如果沒有修改物件的特性，都還是維持單向數據流的概念。</p>
-<h3 id="4-維持狀態與生命週期"><a href="#4-維持狀態與生命週期" class="headerlink" title="4. 維持狀態與生命週期"></a>4. 維持狀態與生命週期</h3><p>如果不希望元件每次都重新生成，或是元件內的內容是由 AJAX 而來，而你不希望每次重整，元件都接收到不一樣的內容的話，就可以使用 <code>&lt;keep-alive&gt;</code> 標籤包住元件，這樣就能維持元件的狀態了。</p>
+<h3 id="4-維持狀態與生命週期"><a href="#4-維持狀態與生命週期" class="headerlink" title="4. 維持狀態與生命週期"></a>4. 維持狀態與生命週期</h3><p>如果不希望元件每次都重新生成，或是元件內的內容是由 AJAX 而來，而你不希望每次重整，元件都接收到不一樣的內容的話，就可以使用 <code>&lt;keep-alive&gt;</code> 标签包住元件，這樣就能維持元件的狀態了。</p>
 <h2 id="props-值的型別"><a href="#props-值的型別" class="headerlink" title="props 值的型別"></a>props 值的型別</h2><p>預先定義 <code>props</code> 應該傳入哪種型別的資料，避免傳入錯誤的資料。</p>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 原本是這樣寫</span></span><br><span class="line"><span class="selector-tag">Vue</span><span class="selector-class">.component</span>(<span class="string">'prop-type'</span>, &#123;</span><br><span class="line">  <span class="attribute">props</span>: [<span class="string">'cash'</span>],</span><br><span class="line">  <span class="attribute">template</span>: <span class="string">'#propType'</span>,</span><br><span class="line">  <span class="attribute">data</span>: function() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      <span class="attribute">newCash</span>: this.cash</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 預先定義 props 值型別</span></span><br><span class="line"><span class="selector-tag">Vue</span><span class="selector-class">.component</span>(<span class="string">'prop-type'</span>, &#123;</span><br><span class="line">   <span class="attribute">props</span>: &#123;</span><br><span class="line">     <span class="attribute">cash</span>: &#123;</span><br><span class="line">       <span class="attribute">type</span>: Number,</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;,</span><br><span class="line">  <span class="attribute">template</span>: <span class="string">'#propType'</span>,</span><br><span class="line">  <span class="attribute">data</span>: function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> &#123;</span><br><span class="line">      <span class="attribute">newCash</span>: this.cash</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>有時候 <code>props</code> 不會接收到來自外部的值，但如果我們希望它帶有預設值，可以這樣做：</p>
@@ -441,7 +441,7 @@
             <a href="/tags/">
           
         <span class="site-state-item-count">52</span>
-        <span class="site-state-item-name">標籤</span></a>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>

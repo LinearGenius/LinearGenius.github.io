@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -151,21 +151,21 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+    <a href="/categories/" rel="section">标签<i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -178,7 +178,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -212,7 +212,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
     <link itemprop="mainEntityOfPage" href="http://lineargenius.github.io/Vuejs/20200121/3810438936/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -375,7 +375,7 @@
 <ol>
 <li>安裝全域的 cli service。</li>
 <li>準備一個 <code>.html</code> 檔（裡面有 Vue 原始碼）以及一個 <code>all.css</code>。</li>
-<li>新增一個 <code>index.vue</code>，在裡面新增 <code>&lt;template&gt;</code> 標籤，把 <code>.html</code> 中的 <code>&lt;div id=&quot;app&quot;&gt;</code> 整段貼進來，貼好後 <code>id=&quot;app&quot;</code> 就刪掉。</li>
+<li>新增一個 <code>index.vue</code>，在裡面新增 <code>&lt;template&gt;</code> 标签，把 <code>.html</code> 中的 <code>&lt;div id=&quot;app&quot;&gt;</code> 整段貼進來，貼好後 <code>id=&quot;app&quot;</code> 就刪掉。</li>
 <li>在 <code>index.vue</code> 新增 <code>&lt;script&gt;</code> 段落，把 <code>.html</code> 中 Vue 的原始碼貼進來，但在 <code>var app = new Vue({})</code> 前一行要加上 <code>export default {}</code>，原本 data 開始到最後的程式碼，要貼進這個物件裡。貼好之後，原本的寫法是根實例的寫法，現在必須用元件的寫法，所以 data 要改成 function return 的形式。</li>
 <li>原本 <code>var app = new Vue({})</code> 可以刪掉了。</li>
 <li>在終端機下指令：<code>vue serve index.vue</code>。</li>
@@ -509,7 +509,7 @@
             <a href="/tags/">
           
         <span class="site-state-item-count">52</span>
-        <span class="site-state-item-name">標籤</span></a>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>

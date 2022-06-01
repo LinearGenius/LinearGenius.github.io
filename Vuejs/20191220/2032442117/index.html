@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -152,21 +152,21 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+    <a href="/categories/" rel="section">标签<i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -179,7 +179,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -213,7 +213,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
     <link itemprop="mainEntityOfPage" href="http://lineargenius.github.io/Vuejs/20191220/2032442117/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -287,10 +287,10 @@
 <a id="more"></a>
 
 <h2 id="emit-向外層傳遞事件"><a href="#emit-向外層傳遞事件" class="headerlink" title="$emit 向外層傳遞事件"></a>$emit 向外層傳遞事件</h2><p><code>$emit</code> 除了可以傳遞事件外，也可以傳遞參數。</p>
-<h3 id="emit-基本用法："><a href="#emit-基本用法：" class="headerlink" title="$emit() 基本用法："></a>$emit() 基本用法：</h3><p>在元件標籤上設定 <code>v-on:自訂事件名 = &quot;Vue 根實例的 method&quot;</code>，這表示元件內的事件發生後將會觸發 Vue 根實例的方法，內層元件就是透過這種方式傳送到外層。</p>
+<h3 id="emit-基本用法："><a href="#emit-基本用法：" class="headerlink" title="$emit() 基本用法："></a>$emit() 基本用法：</h3><p>在元件标签上設定 <code>v-on:自訂事件名 = &quot;Vue 根實例的 method&quot;</code>，這表示元件內的事件發生後將會觸發 Vue 根實例的方法，內層元件就是透過這種方式傳送到外層。</p>
 <figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// HTML</span></span><br><span class="line">&lt;<span class="keyword">button</span>-counter v-<span class="keyword">on</span>:increment=<span class="string">"incrementTotal"</span>&gt;&lt;/<span class="keyword">button</span>-counter&gt;</span><br></pre></td></tr></table></figure>
 
-<p>元件的 <code>template</code> 中，要在 HTML 元素上綁定一個事件，以下面這個範例為例：發生 <code>click</code> 事件後要觸發 <code>incrementCounter</code> 函式，而這個函式是元件中的一個 <code>method</code>。在這個 <code>method</code> 裡面要用 <code>$emit</code> 觸發與 Vue 根實例綁定的事件，所以 <code>$emit()</code> 小括號內要寫入的是在元件標籤上設定的<strong>自訂事件名</strong>。</p>
+<p>元件的 <code>template</code> 中，要在 HTML 元素上綁定一個事件，以下面這個範例為例：發生 <code>click</code> 事件後要觸發 <code>incrementCounter</code> 函式，而這個函式是元件中的一個 <code>method</code>。在這個 <code>method</code> 裡面要用 <code>$emit</code> 觸發與 Vue 根實例綁定的事件，所以 <code>$emit()</code> 小括號內要寫入的是在元件标签上設定的<strong>自訂事件名</strong>。</p>
 <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 元件</span></span><br><span class="line">Vue.component(<span class="string">'buttonCounter'</span>, &#123;</span><br><span class="line">  template:`</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;button @click=<span class="string">"incrementCounter"</span>&gt;增加 &#123;&#123; counter &#125;&#125; 元&lt;/button&gt;</span><br><span class="line">      &lt;input type=<span class="string">"number"</span> v-model=<span class="string">"counter"</span>&gt;</span><br><span class="line">    &lt;/div&gt;`,</span><br><span class="line">  data: <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      counter: <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    incrementCounter: <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.$emit(<span class="string">'increment'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 <p>Vue 根實例中的 <code>incrementTotal</code> 方法，就是剛剛在元件上<strong>與自訂事件綁定的函式</strong>。</p>
@@ -302,7 +302,7 @@
 <li><code>$emit()</code> 第一個參數是自訂事件名稱，當元件發生一個事件時，把這個事件傳到根實例的 <code>methods</code> 去進行運算。</li>
 <li><code>$emit()</code> 第二個參數是元件的資料屬性，把專屬於這個元件的資料傳到根實例的 <code>methods</code> 去進行運算。</li>
 <li>元件模板中所綁定的，都是該元件獨有的資料、<code>methods</code>。</li>
-<li>HTML 中的元件標籤則是元件資料與根實例資料<strong>互相綁定</strong>的場所。</li>
+<li>HTML 中的元件标签則是元件資料與根實例資料<strong>互相綁定</strong>的場所。</li>
 </ol>
 
     </div>
@@ -428,7 +428,7 @@
             <a href="/tags/">
           
         <span class="site-state-item-count">52</span>
-        <span class="site-state-item-name">標籤</span></a>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>

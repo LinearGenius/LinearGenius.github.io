@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -156,21 +156,21 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+    <a href="/categories/" rel="section">标签<i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -183,7 +183,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -217,7 +217,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
     <link itemprop="mainEntityOfPage" href="http://lineargenius.github.io/D3-js/20200217/1734732239/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -288,13 +288,13 @@
 <p>D3.js（Data-Driven Documents）是一個使用動態圖形進行資料視覺化的 JavaScript 程式庫。與 W3C 標準相容，並且利用廣泛實現的 SVG、JavaScript 和 CSS 標準⋯⋯最常被運用在線上新聞網站呈現互動式圖形、呈現資料資料的圖表和呈現含有地理資訊的資料。——維基百科</p>
 </blockquote>
 <p>簡單來說，D3.js 能以圖像的方式來呈現資料，並用資料來驅動 DOM。</p>
-<h2 id="SVG-標籤"><a href="#SVG-標籤" class="headerlink" title="SVG 標籤"></a>SVG 標籤</h2><p>D3.js 是用 SVG 來繪製圖像的，所以需要具備一些 SVG 繪圖的背景知識。SVG 與 HTML 一樣是有標籤的，以下就是常見的 SVG 標籤：</p>
+<h2 id="SVG-标签"><a href="#SVG-标签" class="headerlink" title="SVG 标签"></a>SVG 标签</h2><p>D3.js 是用 SVG 來繪製圖像的，所以需要具備一些 SVG 繪圖的背景知識。SVG 與 HTML 一樣是有标签的，以下就是常見的 SVG 标签：</p>
 <ul>
-<li><code>&lt;text&gt;</code> - 文字標籤</li>
-<li><code>&lt;circle&gt;</code> - 圓形標籤</li>
-<li><code>&lt;line&gt;</code> - 線段標籤</li>
-<li><code>&lt;path&gt;</code> - 弧形標籤</li>
-<li><code>&lt;g&gt;</code> - 整合以上的物件，在 <code>&lt;g&gt;</code> 裡面可以放各類型的標籤</li>
+<li><code>&lt;text&gt;</code> - 文字标签</li>
+<li><code>&lt;circle&gt;</code> - 圓形标签</li>
+<li><code>&lt;line&gt;</code> - 線段标签</li>
+<li><code>&lt;path&gt;</code> - 弧形标签</li>
+<li><code>&lt;g&gt;</code> - 整合以上的物件，在 <code>&lt;g&gt;</code> 裡面可以放各類型的标签</li>
 </ul>
 <h2 id="創建-D3-js-畫布"><a href="#創建-D3-js-畫布" class="headerlink" title="創建 D3.js 畫布"></a>創建 D3.js 畫布</h2><p>首先先來了解如何用 D3.js 選取 DOM。</p>
 <ul>
@@ -315,7 +315,7 @@
 <h2 id="如何繪製長條圖"><a href="#如何繪製長條圖" class="headerlink" title="如何繪製長條圖"></a>如何繪製長條圖</h2><ol>
 <li>準備一個陣列，裡面是物件，每個物件都是等一下會呈現的長條。<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">var vote</span> =[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"Grete"</span>,</span><br><span class="line">    <span class="string">"num"</span>: 80</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"Steffi"</span>,</span><br><span class="line">    <span class="string">"num"</span>: 100</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"Lala"</span>,</span><br><span class="line">    <span class="string">"num"</span>: 200</span><br><span class="line">  &#125;,</span><br><span class="line">];</span><br></pre></td></tr></table></figure></li>
 <li>在 HTML 準備一個空的 <code>&lt;div&gt;</code>，className 取為 <code>.chart</code>。</li>
-<li>插入資料。<figure class="highlight scilab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">d3.<span class="keyword">select</span>(<span class="string">'.chart'</span>)</span><br><span class="line">  .selectAll(<span class="string">'div'</span>)</span><br><span class="line">  .data(vote)</span><br><span class="line">  .enter()</span><br><span class="line">  .append(<span class="string">'div'</span>)</span><br><span class="line">  .html(<span class="function"><span class="keyword">function</span><span class="params">(d)</span>&#123;</span></span><br><span class="line">    <span class="comment">// .html() 類似 .innerHTML，D3 允許 SVG 跟 HTML 標籤混用</span></span><br><span class="line">    <span class="keyword">return</span> d.name + <span class="string">'&lt;br&gt;'</span> + d.num</span><br><span class="line">  &#125;)</span><br><span class="line">  .style(<span class="string">"height"</span>, <span class="function"><span class="keyword">function</span><span class="params">(d)</span>&#123;</span></span><br><span class="line">    <span class="keyword">return</span> d.num + <span class="string">'px'</span>  <span class="comment">// 調整每個長條的高度</span></span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+<li>插入資料。<figure class="highlight scilab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">d3.<span class="keyword">select</span>(<span class="string">'.chart'</span>)</span><br><span class="line">  .selectAll(<span class="string">'div'</span>)</span><br><span class="line">  .data(vote)</span><br><span class="line">  .enter()</span><br><span class="line">  .append(<span class="string">'div'</span>)</span><br><span class="line">  .html(<span class="function"><span class="keyword">function</span><span class="params">(d)</span>&#123;</span></span><br><span class="line">    <span class="comment">// .html() 類似 .innerHTML，D3 允許 SVG 跟 HTML 标签混用</span></span><br><span class="line">    <span class="keyword">return</span> d.name + <span class="string">'&lt;br&gt;'</span> + d.num</span><br><span class="line">  &#125;)</span><br><span class="line">  .style(<span class="string">"height"</span>, <span class="function"><span class="keyword">function</span><span class="params">(d)</span>&#123;</span></span><br><span class="line">    <span class="keyword">return</span> d.num + <span class="string">'px'</span>  <span class="comment">// 調整每個長條的高度</span></span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
@@ -433,7 +433,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什麼是-D3-js"><span class="nav-number">1.</span> <span class="nav-text">什麼是 D3.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SVG-標籤"><span class="nav-number">2.</span> <span class="nav-text">SVG 標籤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#創建-D3-js-畫布"><span class="nav-number">3.</span> <span class="nav-text">創建 D3.js 畫布</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#將資料導入"><span class="nav-number">4.</span> <span class="nav-text">將資料導入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何繪製長條圖"><span class="nav-number">5.</span> <span class="nav-text">如何繪製長條圖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何更新圖表"><span class="nav-number">6.</span> <span class="nav-text">如何更新圖表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小補充"><span class="nav-number">7.</span> <span class="nav-text">小補充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加入-className-的方法"><span class="nav-number">7.1.</span> <span class="nav-text">加入 className 的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入字串的方法"><span class="nav-number">7.2.</span> <span class="nav-text">插入字串的方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考資料"><span class="nav-number">8.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什麼是-D3-js"><span class="nav-number">1.</span> <span class="nav-text">什麼是 D3.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SVG-标签"><span class="nav-number">2.</span> <span class="nav-text">SVG 标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#創建-D3-js-畫布"><span class="nav-number">3.</span> <span class="nav-text">創建 D3.js 畫布</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#將資料導入"><span class="nav-number">4.</span> <span class="nav-text">將資料導入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何繪製長條圖"><span class="nav-number">5.</span> <span class="nav-text">如何繪製長條圖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何更新圖表"><span class="nav-number">6.</span> <span class="nav-text">如何更新圖表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小補充"><span class="nav-number">7.</span> <span class="nav-text">小補充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加入-className-的方法"><span class="nav-number">7.1.</span> <span class="nav-text">加入 className 的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入字串的方法"><span class="nav-number">7.2.</span> <span class="nav-text">插入字串的方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考資料"><span class="nav-number">8.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -462,7 +462,7 @@
             <a href="/tags/">
           
         <span class="site-state-item-count">52</span>
-        <span class="site-state-item-name">標籤</span></a>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -150,21 +150,21 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+    <a href="/categories/" rel="section">标签<i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -177,7 +177,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -211,7 +211,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
     <link itemprop="mainEntityOfPage" href="http://lineargenius.github.io/uncategorized/20191226/433566073/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -301,7 +301,7 @@
 <li>整理 page.vue 裡的內容，只留下 <code>&lt;script&gt;</code> 區塊（<code>data</code> 可留空）及空的 <code>&lt;template&gt;</code>，把 BS 的卡片元件貼在 <code>&lt;template&gt;</code> 裡面</li>
 <li>回到 router 的 index.js，在 <code>import Home</code> 下面新增：<br><code>import Page form ‘/components/pages/page’;</code></li>
 <li>在 router 陣列裡新增相關資訊：<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  name: ‘分頁’,</span><br><span class="line">  path: ‘/page’,</span><br><span class="line">  component: Page</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>在 App.vue 插入 BS navbar，製作分頁導覽列，其中 a 連結的標籤改為 <code>&lt;router-link&gt;</code>，並把 <code>href</code> 屬性改為 <code>to=&quot;path值&quot;</code>，例如 <code>to=&quot;/page&quot;</code>；或是使用 <code>:to=&quot;{ name: &#39;分頁&#39;}&quot;</code> 也有同樣效果</li>
+<li>在 App.vue 插入 BS navbar，製作分頁導覽列，其中 a 連結的标签改為 <code>&lt;router-link&gt;</code>，並把 <code>href</code> 屬性改為 <code>to=&quot;path值&quot;</code>，例如 <code>to=&quot;/page&quot;</code>；或是使用 <code>:to=&quot;{ name: &#39;分頁&#39;}&quot;</code> 也有同樣效果</li>
 </ol>
 <h2 id="巢狀路由"><a href="#巢狀路由" class="headerlink" title="巢狀路由"></a>巢狀路由</h2><p>剛剛在 page 分頁中的卡片，如果希望卡片不變但是裡面內容被抽換，要如何透過虛擬路由來達成呢？</p>
 <ol>
@@ -465,7 +465,7 @@
             <a href="/tags/">
           
         <span class="site-state-item-count">21</span>
-        <span class="site-state-item-name">標籤</span></a>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>

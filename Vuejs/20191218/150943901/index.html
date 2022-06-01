@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -151,21 +151,21 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+    <a href="/categories/" rel="section">标签<i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -178,7 +178,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -212,7 +212,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
     <link itemprop="mainEntityOfPage" href="http://lineargenius.github.io/Vuejs/20191218/150943901/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -314,15 +314,15 @@
 <li>單選：radio 也是所有選項都要設定 <code>value</code> 屬性及 <code>v-model</code>，且 <code>v-model</code> 都要指向 <code>data</code> 裡同一個<strong>特性</strong>，這樣就只會寫入一個值。</li>
 <li><code>&lt;select&gt;</code> 下拉選單：<code>&lt;select&gt;</code> 用 <code>v-model</code> 指向對應的<strong>特性</strong>，<code>&lt;select&gt;</code> 裡面是 <code>&lt;option&gt;</code> 選項。第一個 <code>&lt;option&gt;</code> 可以把 <code>value</code> 屬性的值空著，文字就寫些「請選擇」之類的初始選項，如果不想被使用者誤觸的話，可以再加上 <code>disabled</code> 屬性。其他選項都要填入 <code>value</code> 值，才能正確寫入對應特性中，不過 <code>value</code> 值不一定要跟選項文字相同。</li>
 </ul>
-<h2 id="元件-components-基礎"><a href="#元件-components-基礎" class="headerlink" title="元件 (components) 基礎"></a>元件 (components) 基礎</h2><p>元件可以複用，它在 HTML 中以標籤的形式表現，而標籤名是自定義的元件名稱。</p>
-<p>之前的指令都是寫在 Vue 實例裡，元件則是寫在 Vue 實例外面，而且順序要擺在 Vue 實例之前。因為解譯器是依序執行的，它會先讀到 HTML 的元件標籤，所以必須讓解譯器在 JS 檔案中馬上讀到關於元件的程式碼。</p>
+<h2 id="元件-components-基礎"><a href="#元件-components-基礎" class="headerlink" title="元件 (components) 基礎"></a>元件 (components) 基礎</h2><p>元件可以複用，它在 HTML 中以标签的形式表現，而标签名是自定義的元件名稱。</p>
+<p>之前的指令都是寫在 Vue 實例裡，元件則是寫在 Vue 實例外面，而且順序要擺在 Vue 實例之前。因為解譯器是依序執行的，它會先讀到 HTML 的元件标签，所以必須讓解譯器在 JS 檔案中馬上讀到關於元件的程式碼。</p>
 <p>範例：</p>
 <iframe src="https://codepen.io/gretema/embed/eYYQOMm?height=265&theme-id=default&default-tab=html,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
 
-<p>元件的資料會寫在 <code>Vue.components()</code> 的小括號裡面，小括號內有兩個參數，第一個參數是<strong>自訂元件的名稱</strong>（跟在 HTML 的標籤名相同），第二個參數是<strong>一個物件</strong>，該物件內要寫入一個 <code>data</code> 特性跟一個 <code>template</code> 特性。</p>
+<p>元件的資料會寫在 <code>Vue.components()</code> 的小括號裡面，小括號內有兩個參數，第一個參數是<strong>自訂元件的名稱</strong>（跟在 HTML 的标签名相同），第二個參數是<strong>一個物件</strong>，該物件內要寫入一個 <code>data</code> 特性跟一個 <code>template</code> 特性。</p>
 <p><code>data</code> 特性對應的是一個函式，該函式必須 <code>return</code> 一個物件，該物件裡面放的就是專屬於這個元件的資料。</p>
-<p><code>data</code> 寫好後，開始寫 <code>template</code> 特性。<code>template</code> 特性負責的是這個元件的 HTML 結構，所以對應的值是用<strong>反引號</strong>包起來的「含有 HTML 標籤的字串」，在這裏面可以運用 <code>data</code> 的內容。</p>
-<p>雖然我們在 HTML 中寫的元件是用元件名稱當標籤，但是用 chrome 開發人員工具看 HTML 結構時會發現，原本的元件標籤呈現出來的程式碼會是 template 組出來的內容。</p>
+<p><code>data</code> 寫好後，開始寫 <code>template</code> 特性。<code>template</code> 特性負責的是這個元件的 HTML 結構，所以對應的值是用<strong>反引號</strong>包起來的「含有 HTML 标签的字串」，在這裏面可以運用 <code>data</code> 的內容。</p>
+<p>雖然我們在 HTML 中寫的元件是用元件名稱當标签，但是用 chrome 開發人員工具看 HTML 結構時會發現，原本的元件标签呈現出來的程式碼會是 template 組出來的內容。</p>
 <hr>
 <p>以上就是 Vue 的基礎指令，這些指令都還有一些使用細節可以延伸來介紹，之後會再整理相關筆記。</p>
 
@@ -448,7 +448,7 @@
             <a href="/tags/">
           
         <span class="site-state-item-count">52</span>
-        <span class="site-state-item-name">標籤</span></a>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -153,21 +153,21 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+    <a href="/categories/" rel="section">标签<i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -180,7 +180,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -214,7 +214,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
     <link itemprop="mainEntityOfPage" href="http://lineargenius.github.io/Gulp/20200525/2363080042/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -291,13 +291,13 @@
 <h2 id="專案資料夾結構"><a href="#專案資料夾結構" class="headerlink" title="專案資料夾結構"></a>專案資料夾結構</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">src/</span><br><span class="line">  <span class="string">|-- templates/</span></span><br><span class="line">        <span class="string">|-- index/</span></span><br><span class="line">        <span class="string">|-- layout/</span></span><br><span class="line">        <span class="string">|-- index.ejs</span></span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>index 資料夾：各區塊的 .ejs 檔，每個檔裡面的內容都是用 HTML 標籤撰寫的，且每個檔名開頭都是 <code>_</code>，例如 <code>_footer.ejs</code>。</li>
+<li>index 資料夾：各區塊的 .ejs 檔，每個檔裡面的內容都是用 HTML 标签撰寫的，且每個檔名開頭都是 <code>_</code>，例如 <code>_footer.ejs</code>。</li>
 <li>layout 資料夾：放一些共用的內容，例如 <code>&lt;head&gt;</code> 中的資訊、所有要載入的 CDN <code>&lt;script&gt;</code> 等。</li>
 <li>index.ejs：把以上兩個資料夾中所有 .ejs 排成一個完整的網頁。</li>
 </ul>
 <h2 id="index-ejs"><a href="#index-ejs" class="headerlink" title="index.ejs"></a>index.ejs</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">layout</span>/<span class="attr">_head.ejs</span>') %&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- header &amp; solvable --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">layout</span>/<span class="attr">_header.ejs</span>') %&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- capable --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">index</span>/<span class="attr">_capable.ejs</span>') %&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- formula --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">index</span>/<span class="attr">_formula.ejs</span>') %&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- footer --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">index</span>/<span class="attr">_footer.ejs</span>') %&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- script --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">layout</span>/<span class="attr">_script.ejs</span>') %&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>引入其他的 .ejs 檔，要用 <code>&lt;%- include (&#39;路徑&#39;) %&gt;</code> 標籤。</p>
+<p>引入其他的 .ejs 檔，要用 <code>&lt;%- include (&#39;路徑&#39;) %&gt;</code> 标签。</p>
 
     </div>
 
@@ -423,7 +423,7 @@
             <a href="/tags/">
           
         <span class="site-state-item-count">52</span>
-        <span class="site-state-item-name">標籤</span></a>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>

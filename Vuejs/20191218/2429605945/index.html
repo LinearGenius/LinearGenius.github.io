@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -151,21 +151,21 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+    <a href="/categories/" rel="section">标签<i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -178,7 +178,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -212,7 +212,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
     <link itemprop="mainEntityOfPage" href="http://lineargenius.github.io/Vuejs/20191218/2429605945/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -288,7 +288,7 @@
 <h2 id="v-if-v-else-v-else-if"><a href="#v-if-v-else-v-else-if" class="headerlink" title="v-if / v-else / v-else-if"></a>v-if / v-else / v-else-if</h2><p>在一個 HTML 元素上使用 <code>v-if=&quot;data資料&quot;</code>，當資料的值為 <code>true</code> 時才會渲染這個 DOM；而在 <code>v-if</code> 相鄰的 HTML 元素上使用 <code>v-else</code>，就能把 <code>v-if</code> 判斷為 <code>false</code> 的資料渲染在這個 DOM 上。</p>
 <p><code>v-else-if</code> 用於渲染條件<strong>多於兩個以上</strong>時，第一個條件用 <code>v-if=&quot;條件</code>“，第二跟第三個就可以用 <code>v-else-if=&quot;其他條件&quot;</code> 。</p>
 <h3 id="v-if-跟-v-show-的差異"><a href="#v-if-跟-v-show-的差異" class="headerlink" title="v-if 跟 v-show 的差異"></a>v-if 跟 v-show 的差異</h3><p><code>v-show</code> 是控制 HTML 元素的 <code>display</code>，所以 <code>v-show</code> 為 <code>false</code> 的 HTML 元素其實還是有被渲染出來，只是 <code>display: none</code> 而已；<code>v-if</code> 是指渲染出符合條件的 HTML 元素，不符合的就不會渲染。</p>
-<h3 id="模板-lt-template-gt"><a href="#模板-lt-template-gt" class="headerlink" title="模板 &lt;template&gt;"></a>模板 <code>&lt;template&gt;</code></h3><p><code>&lt;template&gt;</code> 的使用時機在於，想要使用 Vue 指令，但不希望 HTML 標籤輸出時。<br>在 <code>&lt;template&gt;</code> 裡的子元素不會被渲染出來，可以一次控制多個 DOM。如果在 <code>&lt;template&gt;</code> 使用 <code>v-if</code>，那麼條件為 <code>true</code> 時，就能渲染出 <code>&lt;template&gt;</code> 內的子元素。</p>
+<h3 id="模板-lt-template-gt"><a href="#模板-lt-template-gt" class="headerlink" title="模板 &lt;template&gt;"></a>模板 <code>&lt;template&gt;</code></h3><p><code>&lt;template&gt;</code> 的使用時機在於，想要使用 Vue 指令，但不希望 HTML 标签輸出時。<br>在 <code>&lt;template&gt;</code> 裡的子元素不會被渲染出來，可以一次控制多個 DOM。如果在 <code>&lt;template&gt;</code> 使用 <code>v-if</code>，那麼條件為 <code>true</code> 時，就能渲染出 <code>&lt;template&gt;</code> 內的子元素。</p>
 <h2 id="compued-與-watch"><a href="#compued-與-watch" class="headerlink" title="compued 與 watch"></a>compued 與 watch</h2><p><code>computed</code> 與 <code>watch</code> 都是專門放函式的 Vue 實例特性，兩者很像，因為都會隨著資料做變化，但兩者最大差異在於<strong>會不會變動 data 資料</strong>，<code>computed</code> 裡的 <code>function</code> 在資料變動時才會執行、渲染；而 <code>watch</code> 相反，是<strong>主動去監控及變動 data 資料</strong>，當資料變動時就執行特定 <code>function</code>。</p>
 <p>所以可以整理成以下的比較：</p>
 <ul>
@@ -298,7 +298,7 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">watch: &#123;</span><br><span class="line">  監控的 data 特性: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">this</span>.data特性 = <span class="literal">false</span>;</span><br><span class="line">    &#125;, <span class="number">3000</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="表單細節操作"><a href="#表單細節操作" class="headerlink" title="表單細節操作"></a>表單細節操作</h2><h3 id="用-v-for-製作多個-lt-option-gt-："><a href="#用-v-for-製作多個-lt-option-gt-：" class="headerlink" title="用 v-for 製作多個 &lt;option&gt;："></a>用 v-for 製作多個 <code>&lt;option&gt;</code>：</h3><p><code>&lt;select&gt;</code> 下拉式選單標籤裡面包的是好幾個 <code>&lt;option&gt;</code>，也就是選項，可以透過 <code>v-for</code> 製作多個 <code>&lt;option&gt;</code> 。</p>
+<h2 id="表單細節操作"><a href="#表單細節操作" class="headerlink" title="表單細節操作"></a>表單細節操作</h2><h3 id="用-v-for-製作多個-lt-option-gt-："><a href="#用-v-for-製作多個-lt-option-gt-：" class="headerlink" title="用 v-for 製作多個 &lt;option&gt;："></a>用 v-for 製作多個 <code>&lt;option&gt;</code>：</h3><p><code>&lt;select&gt;</code> 下拉式選單标签裡面包的是好幾個 <code>&lt;option&gt;</code>，也就是選項，可以透過 <code>v-for</code> 製作多個 <code>&lt;option&gt;</code> 。</p>
 <ol>
 <li>在 <code>data</code> 先寫好要放進 <code>&lt;option&gt;</code> 的資料（陣列格式）</li>
 <li>寫一個 HTML <code>&lt;option&gt;</code>，並設定 <code>:value=&quot;item&quot;</code>，及 <code>v-for=&quot;item in 資料陣列&quot;</code></li>
@@ -460,7 +460,7 @@
             <a href="/tags/">
           
         <span class="site-state-item-count">52</span>
-        <span class="site-state-item-name">標籤</span></a>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
