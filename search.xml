@@ -3,7 +3,8 @@
   <entry>
     <title>在工作中學 Git：rebase -i 指令</title>
     <url>/Git/20200621/438927621/</url>
-    <content><![CDATA[<p>上一篇說到 <code>rebase</code> 的用法，那就不得不繼續講 <code>rebase -i</code> 指令，學會這個指令的話就可以隨意地對 commit 進行各種修改與排列組合，是我心中的 git 神兵利器之一，以下就讓我談談我在開發時如何使用這個指令吧！</p>
+    <content>
+      <![CDATA[<p>上一篇說到 <code>rebase</code> 的用法，那就不得不繼續講 <code>rebase -i</code> 指令，學會這個指令的話就可以隨意地對 commit 進行各種修改與排列組合，是我心中的 git 神兵利器之一，以下就讓我談談我在開發時如何使用這個指令吧！</p>
 <a id="more"></a>
 
 <h2 id="什麼是-rebase-i"><a href="#什麼是-rebase-i" class="headerlink" title="什麼是 rebase -i"></a>什麼是 rebase -i</h2><p><code>rebase -i</code> 的意思是<strong>互動式 rebase</strong>（git interactive rebase），當使用 <code>rebase</code> 這個指令的時候，後面加上一個 <code>-i</code> 的參數，git 就會打開一個介面（vim 編輯器），讓你知道有哪些 commit 會被複製下來，它也會告訴你這些 commit 的編號以及訊息。</p>
@@ -28,21 +29,23 @@
 </ul>
 <hr>
 <p>本篇文章只是簡單地介紹 <code>rebase -i</code>，並分享我平常如何使用它，但它還有很多豐富的用途是我沒有介紹到的，因此我很推薦大家可以延伸閱讀我所附的參考資料，會對這個指令的用法有更深入的了解哦！</p>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>w3HexSchool</tag>
-        <tag>Git</tag>
-        <tag>Rebase</tag>
-        <tag>GitFlow</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Git</category>
+    </categories>
+    <tags>
+      <tag>w3HexSchool</tag>
+      <tag>Git</tag>
+      <tag>Rebase</tag>
+      <tag>GitFlow</tag>
+    </tags>
   </entry>
   <entry>
     <title>在工作中學 Git：rebase 指令</title>
     <url>/Git/20200608/1285084183/</url>
-    <content><![CDATA[<p>在進入公司以前，我都是用 <code>git merge</code> 來合併分支；直到進入公司後，團隊都是用 <code>git rebase</code> 來合併，一開始很不習慣，到最近我才漸漸習慣這種合併方式，因此想把 <code>rebase</code> 指令適用的場景記錄下來，跟大家分享。</p>
+    <content>
+      <![CDATA[<p>在進入公司以前，我都是用 <code>git merge</code> 來合併分支；直到進入公司後，團隊都是用 <code>git rebase</code> 來合併，一開始很不習慣，到最近我才漸漸習慣這種合併方式，因此想把 <code>rebase</code> 指令適用的場景記錄下來，跟大家分享。</p>
 <a id="more"></a>
 
 <h2 id="什麼是-rebase"><a href="#什麼是-rebase" class="headerlink" title="什麼是 rebase"></a>什麼是 rebase</h2><p><code>rebase</code> 是 <code>merge</code> 以外的另一種合併方式，它會取出一連串的 commit，「複製」它們，然後把它們接在別的地方。</p>
@@ -68,21 +71,23 @@
 </ul>
 <hr>
 <p>都已經講到 <code>rebase</code> 了，感覺就應該要繼續講 <code>rebase -i</code>（互動式 rebase），不過就讓我挪到下禮拜再寫吧！<del>因為真的快沒題材了</del></p>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>w3HexSchool</tag>
-        <tag>Git</tag>
-        <tag>Rebase</tag>
-        <tag>GitFlow</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Git</category>
+    </categories>
+    <tags>
+      <tag>w3HexSchool</tag>
+      <tag>Git</tag>
+      <tag>Rebase</tag>
+      <tag>GitFlow</tag>
+    </tags>
   </entry>
   <entry>
     <title>[JS] 講座筆記：JavaScript 設計模式——關注點分離</title>
     <url>/javascript/20200601/270454248/</url>
-    <content><![CDATA[<p>本篇筆記來自 2020.4.15 六角學院線上研討會，講者為卡斯伯老師。在這一次講座中，老師講解了關注點分離作為一種 JavaScript 設計模式是如何運作的。</p>
+    <content>
+      <![CDATA[<p>本篇筆記來自 2020.4.15 六角學院線上研討會，講者為卡斯伯老師。在這一次講座中，老師講解了關注點分離作為一種 JavaScript 設計模式是如何運作的。</p>
 <a id="more"></a>
 
 <h2 id="何謂關注點分離"><a href="#何謂關注點分離" class="headerlink" title="何謂關注點分離"></a>何謂關注點分離</h2><p>畫面歸畫面、邏輯歸邏輯、資料歸資料<del>、孫子龜孫子</del></p>
@@ -108,19 +113,21 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeItem</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> id = e.target.dataset.id;</span><br><span class="line">  data.splice(id, <span class="number">1</span>);</span><br><span class="line">  render();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addItem</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> newItem = &#123;</span><br><span class="line">    first: <span class="string">'Greta'</span>,</span><br><span class="line">    last: <span class="string">'Ma'</span></span><br><span class="line">  &#125;</span><br><span class="line">  data.push(newItem);</span><br><span class="line">  render();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://paper.dropbox.com/doc/0415-JavaScript-bXc2gUg81pibTQMmAvmjL" target="_blank" rel="external nofollow noopener noreferrer">問答會共筆</a></p>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>w3HexSchool</tag>
-        <tag>SeparationOfConcerns</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>JavaScript</category>
+    </categories>
+    <tags>
+      <tag>w3HexSchool</tag>
+      <tag>SeparationOfConcerns</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Gulp] 在 Gulp 專案中引入 EJS template</title>
     <url>/Gulp/20200525/2363080042/</url>
-    <content><![CDATA[<p>這篇文章是我在開始工作前學習 Gulp 與 EJS 時的筆記，現在的公司雖然不是用 Gulp 也不是用 EJS，而是採用一個電商後台服務 Shopify 自創的模板語言（liquid），但因為同為模板語言，因此讓我想起曾寫過這篇跟 EJS 有關的筆記，所以就拿來發鐵人賽啦～</p>
+    <content>
+      <![CDATA[<p>這篇文章是我在開始工作前學習 Gulp 與 EJS 時的筆記，現在的公司雖然不是用 Gulp 也不是用 EJS，而是採用一個電商後台服務 Shopify 自創的模板語言（liquid），但因為同為模板語言，因此讓我想起曾寫過這篇跟 EJS 有關的筆記，所以就拿來發鐵人賽啦～</p>
 <a id="more"></a>
 
 <p>如何在 Gulp 專案中安裝 EJS 可以參考<a href="https://hsiangfeng.github.io/gulp/20190613/2073498620/" target="_blank" rel="external nofollow noopener noreferrer">這是在講 Gulp 不是飲料是任務自動化工具這件事之番外篇：加入 ejs 篇</a>。</p>
@@ -140,20 +147,22 @@
 <h2 id="index-ejs"><a href="#index-ejs" class="headerlink" title="index.ejs"></a>index.ejs</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">layout</span>/<span class="attr">_head.ejs</span>') %&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- header &amp; solvable --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">layout</span>/<span class="attr">_header.ejs</span>') %&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- capable --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">index</span>/<span class="attr">_capable.ejs</span>') %&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- formula --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">index</span>/<span class="attr">_formula.ejs</span>') %&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- footer --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">index</span>/<span class="attr">_footer.ejs</span>') %&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- script --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span> ('<span class="attr">.</span>/<span class="attr">layout</span>/<span class="attr">_script.ejs</span>') %&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>引入其他的 .ejs 檔，要用 <code>&lt;%- include (&#39;路徑&#39;) %&gt;</code> 标签。</p>
-]]></content>
-      <categories>
-        <category>Gulp</category>
-      </categories>
-      <tags>
-        <tag>w3HexSchool</tag>
-        <tag>Gulp</tag>
-        <tag>EJS</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Gulp</category>
+    </categories>
+    <tags>
+      <tag>w3HexSchool</tag>
+      <tag>Gulp</tag>
+      <tag>EJS</tag>
+    </tags>
   </entry>
   <entry>
     <title>開發紀錄：商品分類實作</title>
     <url>/%E9%96%8B%E7%99%BC%E7%B4%80%E9%8C%84/20200518/2522345259/</url>
-    <content><![CDATA[<p>最近陸陸續續經手了幾個公司專案的新功能，其中一個功能是要幫所有商品加上分類，然而在實作過程中卡關了一陣子，因此特別撰寫本文來記錄這次任務的幾種解法。</p>
+    <content>
+      <![CDATA[<p>最近陸陸續續經手了幾個公司專案的新功能，其中一個功能是要幫所有商品加上分類，然而在實作過程中卡關了一陣子，因此特別撰寫本文來記錄這次任務的幾種解法。</p>
 <a id="more"></a>
 
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我目前負責公司電商網站的維護，公司專案有個需求是要做出商品分類，在開發時我遇到一個 bug 解不出來，因此在六角學院社團附上 Demo 跟大家請教。</p>
@@ -197,21 +206,23 @@
 
 <hr>
 <p>雖然最後是採用同事的解法，但其實其他同學提供的解法我也覺得很棒，其中使用了很多 ES6 的用法，我想我之後應該會時不時拿出來複習，因此特別寫這篇文以資紀錄。</p>
-]]></content>
-      <categories>
-        <category>開發紀錄</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>w3HexSchool</tag>
-        <tag>ES6</tag>
-        <tag>JavaScript</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>開發紀錄</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>w3HexSchool</tag>
+      <tag>ES6</tag>
+      <tag>JavaScript</tag>
+    </tags>
   </entry>
   <entry>
     <title>[JS] JavaScript ES6 常用語法筆記</title>
     <url>/javascript/20200504/221423942/</url>
-    <content><![CDATA[<p>一直以為有發過這篇，結果竟然沒有！<br>學習 JavaScript 這麼久了，筆記中當然不能少了 ES6 常用語法囉～</p>
+    <content>
+      <![CDATA[<p>一直以為有發過這篇，結果竟然沒有！<br>學習 JavaScript 這麼久了，筆記中當然不能少了 ES6 常用語法囉～</p>
 <a id="more"></a>
 
 <h2 id="變數宣告"><a href="#變數宣告" class="headerlink" title="變數宣告"></a>變數宣告</h2><h3 id="var-與-let-的區別"><a href="#var-與-let-的區別" class="headerlink" title="var 與 let 的區別"></a><code>var</code> 與 <code>let</code> 的區別</h3><ol>
@@ -347,19 +358,21 @@
 <h4 id="累加"><a href="#累加" class="headerlink" title="累加"></a>累加</h4><p><code>reduce()</code> 第一個參數是一個 callback 函式，第二個參數是累加的起始值。</p>
 <p>callback 函式的參數中，第一個參數為「前一個元素的值」，如果沒有前一個元素，就使用 <code>reduce()</code> 的第二個參數。</p>
 <h4 id="比較值的大小"><a href="#比較值的大小" class="headerlink" title="比較值的大小"></a>比較值的大小</h4><p>配合使用 <code>Math.max()</code>。</p>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>w3HexSchool</tag>
-        <tag>ES6</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>JavaScript</category>
+    </categories>
+    <tags>
+      <tag>w3HexSchool</tag>
+      <tag>ES6</tag>
+    </tags>
   </entry>
   <entry>
     <title>講座筆記：人生策略與學習方法論</title>
     <url>/%E8%81%B7%E6%B6%AF%E8%88%87%E5%AD%B8%E7%BF%92/20200427/1054851528/</url>
-    <content><![CDATA[<p>這篇筆記來自於 2020.03.26 六角學院的線上研討會，講者為慕課前學習長——康晉暚（阿康）老師，講者在這一節講座中分享了他自己的職涯體悟，並分寫了一套學習新知識 / 新技能的方法論。</p>
+    <content>
+      <![CDATA[<p>這篇筆記來自於 2020.03.26 六角學院的線上研討會，講者為慕課前學習長——康晉暚（阿康）老師，講者在這一節講座中分享了他自己的職涯體悟，並分寫了一套學習新知識 / 新技能的方法論。</p>
 <a id="more"></a>
 
 <h2 id="關於人生策略"><a href="#關於人生策略" class="headerlink" title="關於人生策略"></a>關於人生策略</h2><h3 id="到目前為止的人生復盤"><a href="#到目前為止的人生復盤" class="headerlink" title="到目前為止的人生復盤"></a>到目前為止的人生復盤</h3><ul>
@@ -421,18 +434,20 @@
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://docs.google.com/presentation/d/1AmLyPRUJJGegoFY_Ay3XrwZSZ7y15HL6WqmRZUOd504/edit#slide=id.p" target="_blank" rel="external nofollow noopener noreferrer">講座簡報</a></p>
 <hr>
 <p>今天是轉職後第一天上班，雖然沒什麼實質的產出，但還是莫名覺得累 XD<br>還差點忘記今天又到了要發文的日子了，還好還有存稿可以用，哇哈哈。</p>
-]]></content>
-      <categories>
-        <category>職涯與學習</category>
-      </categories>
-      <tags>
-        <tag>w3HexSchool</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>職涯與學習</category>
+    </categories>
+    <tags>
+      <tag>w3HexSchool</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vuex 資料狀態管理學習筆記之模組化資料運用</title>
     <url>/Vuejs/20200420/127038282/</url>
-    <content><![CDATA[<p>這系列到目前為止，其實已經把 Vuex 基本的使用方式介紹得差不多了。<br>而本篇則是會介紹一些比之前進階一點的寫法，也就是將 Vuex 中管理的資料模組化，並以與之前不同的形式在元件中讀取資料。</p>
+    <content>
+      <![CDATA[<p>這系列到目前為止，其實已經把 Vuex 基本的使用方式介紹得差不多了。<br>而本篇則是會介紹一些比之前進階一點的寫法，也就是將 Vuex 中管理的資料模組化，並以與之前不同的形式在元件中讀取資料。</p>
 <a id="more"></a>
 
 <h2 id="Vuex-中的-getters-mapGetters-mapActions"><a href="#Vuex-中的-getters-mapGetters-mapActions" class="headerlink" title="Vuex 中的 getters, mapGetters, mapActions"></a>Vuex 中的 getters, mapGetters, mapActions</h2><p>這一段要介紹的是：在元件中提取 Vuex 函式的新方法。</p>
@@ -504,20 +519,22 @@
 <li><a href="https://blog.hinablue.me/2019-ithome-ironman-day-8/" target="_blank" rel="external nofollow noopener noreferrer">[IT 鐵人賽] Vuex 基本入門Day 8 - HINA::工程幼稚園</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/100941659" target="_blank" rel="external nofollow noopener noreferrer">vuex：弄懂mapState、mapGetters、mapMutations、mapActions</a></li>
 </ul>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>w3HexSchool</tag>
-        <tag>Vuex</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>w3HexSchool</tag>
+      <tag>Vuex</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vuex 資料狀態管理學習筆記之功能實作篇</title>
     <url>/Vuejs/20200406/1863907667/</url>
-    <content><![CDATA[<p>學習六角學院「Vue 出一個電商網站」課程時，課程後半段是跟著老師的示範，實作出電商網站的完整功能。</p>
+    <content>
+      <![CDATA[<p>學習六角學院「Vue 出一個電商網站」課程時，課程後半段是跟著老師的示範，實作出電商網站的完整功能。</p>
 <p>這篇筆記便是紀錄了當時實作的部分功能：Navbar 中的購物車列表、商品頁側欄的商品分類。</p>
 <a id="more"></a>
 
@@ -568,20 +585,22 @@
 
 <h3 id="子畫面呈現過濾後的商品列表"><a href="#子畫面呈現過濾後的商品列表" class="headerlink" title="子畫面呈現過濾後的商品列表"></a>子畫面呈現過濾後的商品列表</h3><p>商品卡片最外層用 <code>.col-md-4</code> 包住，並且在這一層用 <code>v-for</code> 從 <code>computed</code> <code>filterData()</code> 中疊代出過濾後的每一項商品。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span></span></span><br><span class="line"><span class="tag">  <span class="attr">class</span>=<span class="string">"col-md-4 mb-4"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">v-for</span>=<span class="string">"item in filterData"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:key</span>=<span class="string">"item.id"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card border-0 box-shadow text-center h-100"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">"card-img-top"</span> <span class="attr">:src</span>=<span class="string">"item.image"</span> <span class="attr">alt</span>=<span class="string">"Card image cap"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">h4</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>&#123;&#123; item.title &#125;&#125;<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"card-text text-left"</span>&gt;</span>&#123;&#123; item.content &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-footer border-top-0 bg-white"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-outline-secondary btn-block btn-sm"</span></span></span><br><span class="line"><span class="tag">       @<span class="attr">click</span>=<span class="string">"addtoCart(item.id)"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-cart-plus"</span> <span class="attr">aria-hidden</span>=<span class="string">"true"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        加到購物車</span><br><span class="line">      <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>w3HexSchool</tag>
-        <tag>Vuex</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>w3HexSchool</tag>
+      <tag>Vuex</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vuex 資料狀態管理學習筆記之實作起手式</title>
     <url>/Vuejs/20200330/3884529085/</url>
-    <content><![CDATA[<p>上週的 Vuex 筆記中介紹完了基本概念，這週的筆記就著重在實作上囉！<br>不過由於實作的部分篇幅過長，所以會分成比較多篇來發布。</p>
+    <content>
+      <![CDATA[<p>上週的 Vuex 筆記中介紹完了基本概念，這週的筆記就著重在實作上囉！<br>不過由於實作的部分篇幅過長，所以會分成比較多篇來發布。</p>
 <a id="more"></a>
 
 <h3 id="新增一個-store-管理網站資料狀態"><a href="#新增一個-store-管理網站資料狀態" class="headerlink" title="新增一個 store 管理網站資料狀態"></a>新增一個 store 管理網站資料狀態</h3><ol>
@@ -673,20 +692,22 @@
 <li>最後則是要把資料渲染到畫面上。在 <code>computed</code> 中新增函式來達成，函式的名稱依照資料特性名稱來取。</li>
 </ol>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">categories() &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.$store.state.categories;</span><br><span class="line">&#125;,</span><br><span class="line">products() &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.$store.state.products;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>w3HexSchool</tag>
-        <tag>Vuex</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>w3HexSchool</tag>
+      <tag>Vuex</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vuex 資料狀態管理學習筆記之基本概念篇</title>
     <url>/Vuejs/20200323/1597330136/</url>
-    <content><![CDATA[<p>最近為了鼠年全馬寫文活動，開始清點所有還沒公開發表的學習筆記，這就是其中一篇。<br>今天這篇會先簡介一下 Vuex 是什麼，篇幅會稍短，<br>然後下一篇就會寫到一些 Vuex 實際演練。</p>
+    <content>
+      <![CDATA[<p>最近為了鼠年全馬寫文活動，開始清點所有還沒公開發表的學習筆記，這就是其中一篇。<br>今天這篇會先簡介一下 Vuex 是什麼，篇幅會稍短，<br>然後下一篇就會寫到一些 Vuex 實際演練。</p>
 <a id="more"></a>
 
 <h2 id="Vuex-是什麼"><a href="#Vuex-是什麼" class="headerlink" title="Vuex 是什麼"></a>Vuex 是什麼</h2><p>根據<a href="https://vuex.vuejs.org/zh/" target="_blank" rel="external nofollow noopener noreferrer">官方文件</a>的說明，Vuex 是 Vue.js 專用的資料狀態管理模式，可以集中式地管理各元件的資料，通常用於大規模的專案。</p>
@@ -711,20 +732,22 @@
 <p><img src="https://i.imgur.com/8VwkWrN.png" alt="圖片來源：卡斯伯老師"></p>
 <hr>
 <p>這週就先介紹到這邊，下週的 Vuex 筆記就會用比較長的篇幅來記錄一些實際演練過程囉！</p>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>w3HexSchool</tag>
-        <tag>Vuex</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>w3HexSchool</tag>
+      <tag>Vuex</tag>
+    </tags>
   </entry>
   <entry>
     <title>開發紀錄：幫媽媽寫一個 SPA 形象網站</title>
     <url>/%E9%96%8B%E7%99%BC%E7%B4%80%E9%8C%84/20200316/2576586368/</url>
-    <content><![CDATA[<p>不知道各位是否曾經經歷過，當身邊的親朋好友知道你會寫網頁後，就開始拜託你幫他免費寫網頁呢？<br>一般來說我們一定會跟對方<del>說誰理你啊</del>婉拒，但如果說拜託你的人是你媽呢？<br>以下就是我被我媽軟磨硬泡一年多後，認命幫她寫網頁的開發紀錄。</p>
+    <content>
+      <![CDATA[<p>不知道各位是否曾經經歷過，當身邊的親朋好友知道你會寫網頁後，就開始拜託你幫他免費寫網頁呢？<br>一般來說我們一定會跟對方<del>說誰理你啊</del>婉拒，但如果說拜託你的人是你媽呢？<br>以下就是我被我媽軟磨硬泡一年多後，認命幫她寫網頁的開發紀錄。</p>
 <a id="more"></a>
 
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我媽是一個年資 20 幾年的保母，她希望能透過架設個人網站，來吸引更多的客源。<br>於是，就如同我上面提到的，由於我被她盧到受不了，就幫媽媽做了一個 Vue SPA 個人形象網站，網址在此：<a href="https://nanny-yingju.com/" target="_blank" rel="external nofollow noopener noreferrer">https://nanny-yingju.com/</a>。</p>
@@ -771,21 +794,23 @@
 <h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>老實說我現在正開始如火如荼地尋求第一份前端工程師正職，結果我媽硬是要我在這段緊張忙碌的期間做她的個人網站，真的是蠻負擔的，尤其這位不給 Pay 的業主在我寫扣的時候總是站在我旁邊看……，如果發現我在寫履歷或投履歷或忙自己的事時，還會幽幽地說：「蛤……不是在弄我的喔……」，言盡於此，大家應該可以想像得到那個畫面吧^^</p>
 <p>至於這種不用串後端的形象網站為何要用到 Vue？除了我想練一下對 Vue 專案結構的熟悉度以外，也是希望未來有一天能自己開 API 增加功能，所以就預先把架構架好這樣。</p>
 <p>好啦，我媽可以容忍女兒好好的公務員不幹，從台北跑回家當尼特好幾個月，作為對她的回饋，我運用這一年多的學習成果幫她寫個網頁、讓她開心、同時又讓她可以跟親友炫耀，這樣應該算是孝順吧！XD</p>
-]]></content>
-      <categories>
-        <category>開發紀錄</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>w3HexSchool</tag>
-        <tag>VueCLI3</tag>
-        <tag>形象網站</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>開發紀錄</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>w3HexSchool</tag>
+      <tag>VueCLI3</tag>
+      <tag>形象網站</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Gulp] 安裝 PostCSS 的地雷</title>
     <url>/Gulp/20200310/2050018576/</url>
-    <content><![CDATA[<p>最近在學怎麼使用 Gulp 來管理專案，於是按照 Ray 的教學文慢慢跟著寫 gulpfile，不過在安裝 PostCSS 時有踩到一個文章中沒提到的地雷，解決的過程一波二折，於是讓我決定紀錄一下拆地雷的經過。</p>
+    <content>
+      <![CDATA[<p>最近在學怎麼使用 Gulp 來管理專案，於是按照 Ray 的教學文慢慢跟著寫 gulpfile，不過在安裝 PostCSS 時有踩到一個文章中沒提到的地雷，解決的過程一波二折，於是讓我決定紀錄一下拆地雷的經過。</p>
 <a id="more"></a>
 
 <h2 id="問題描述"><a href="#問題描述" class="headerlink" title="問題描述"></a>問題描述</h2><p>在 Ray 的教學文：<a href="https://hsiangfeng.github.io/gulp/20190610/4048666562/" target="_blank" rel="external nofollow noopener noreferrer">這是在講 Gulp 不是飲料是任務自動化工具這件事：安裝 PostCSS 篇</a>中，有提到要安裝 <code>gulp-cssnano</code>，並且將它引入 gulpfile 中。</p>
@@ -813,20 +838,22 @@
 
 <p>之後就順利運行了～</p>
 <h2 id="Special-Thanks"><a href="#Special-Thanks" class="headerlink" title="Special Thanks"></a>Special Thanks</h2><p>感謝 Ray 撥空看我的原始碼，協助我抓蟲成功 🐛</p>
-]]></content>
-      <categories>
-        <category>Gulp</category>
-      </categories>
-      <tags>
-        <tag>w3HexSchool</tag>
-        <tag>Gulp</tag>
-        <tag>PostCSS</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Gulp</category>
+    </categories>
+    <tags>
+      <tag>w3HexSchool</tag>
+      <tag>Gulp</tag>
+      <tag>PostCSS</tag>
+    </tags>
   </entry>
   <entry>
     <title>[JS] 講座筆記：JS Promise 實戰教學</title>
     <url>/javascript/20200302/2110342105/</url>
-    <content><![CDATA[<p>本篇筆記來自 2020.2.26 六角學院線上研討會，講者為偷米騎巴哥的 Tommy。在這一次講座中，Tommy 老師為大家複習了非同步行為與 Queue 的概念，並接續介紹了使非同步行為依序進行的四種方法。</p>
+    <content>
+      <![CDATA[<p>本篇筆記來自 2020.2.26 六角學院線上研討會，講者為偷米騎巴哥的 Tommy。在這一次講座中，Tommy 老師為大家複習了非同步行為與 Queue 的概念，並接續介紹了使非同步行為依序進行的四種方法。</p>
 <a id="more"></a>
 
 <p>當我們有 3 個 <code>setTimeout()</code> 時，我們可以使它們按照順序執行；但是當我們有 3 個 AJAX 時，由於變因太多、無法確定各自回傳的時間，因此不一定能照順序執行。</p>
@@ -875,22 +902,24 @@
 <p>實務上使用 <code>XMLHttpRequest</code> 時的寫法：</p>
 <p><img src="https://i.imgur.com/IBlkZKh.png" alt></p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://slides.com/yi-tailin/deck-e329c0#/" target="_blank" rel="external nofollow noopener noreferrer">slides 簡報</a><br><a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/function*" target="_blank" rel="external nofollow noopener noreferrer">function*</a><br><a href="https://developers.google.com/web/fundamentals/primers/promises?hl=zh-tw#top_of_page" target="_blank" rel="external nofollow noopener noreferrer">JavaScript Promise：簡介</a><br><a href="https://wcc723.github.io/development/2020/02/16/all-new-promise/" target="_blank" rel="external nofollow noopener noreferrer">JavaScript Promise 全介紹</a></p>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>w3HexSchool</tag>
-        <tag>Promise</tag>
-        <tag>async...await</tag>
-        <tag>callback</tag>
-        <tag>Generator</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>JavaScript</category>
+    </categories>
+    <tags>
+      <tag>w3HexSchool</tag>
+      <tag>Promise</tag>
+      <tag>async...await</tag>
+      <tag>callback</tag>
+      <tag>Generator</tag>
+    </tags>
   </entry>
   <entry>
     <title>[JS] 講座筆記：AJAX 非同步 / Event Queue 詳解</title>
     <url>/javascript/20200224/3747532111/</url>
-    <content><![CDATA[<p>本篇筆記來自 2020.2.19 六角學院線上研討會，講者為偷米騎巴哥的 Tommy。在這一次講座中，Tommy 老師用許多 Demo 示範了非同步行為與 Queue 之間的關係。</p>
+    <content>
+      <![CDATA[<p>本篇筆記來自 2020.2.19 六角學院線上研討會，講者為偷米騎巴哥的 Tommy。在這一次講座中，Tommy 老師用許多 Demo 示範了非同步行為與 Queue 之間的關係。</p>
 <a id="more"></a>
 <h2 id="Event-Queue-事件佇列"><a href="#Event-Queue-事件佇列" class="headerlink" title="Event Queue 事件佇列"></a>Event Queue 事件佇列</h2><p>JavaScript 是 Single Thread（單執行緒）語言，只用一顆 CPU 運轉，一次只能做一件事。但是，計時器（setTimeout）、AJAX、Promise 是屬於 Web APIs，不受單執行緒限制，它們會被放到 Queue 中，等待 JavaScript 執行。</p>
 <p>因此，整個流程（Event Loop）就像這樣：</p>
@@ -950,21 +979,23 @@
 </li>
 </ol>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="http://slides.com/yi-tailin/event-queue-ajax/#/" target="_blank" rel="external nofollow noopener noreferrer">slide 簡報</a></p>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>AJAX</tag>
-        <tag>w3HexSchool</tag>
-        <tag>EventQueue</tag>
-        <tag>EventLoop</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>JavaScript</category>
+    </categories>
+    <tags>
+      <tag>AJAX</tag>
+      <tag>w3HexSchool</tag>
+      <tag>EventQueue</tag>
+      <tag>EventLoop</tag>
+    </tags>
   </entry>
   <entry>
     <title>D3.js 超超超基礎入門</title>
     <url>/D3-js/20200217/1734732239/</url>
-    <content><![CDATA[<p>之前接案時為了要實現一個動畫效果而學過一點 D3.js，雖然最後沒有派上用場，但當時我寫下一些入門筆記，如果你沒學過 D3.js 而想要嘗試的話，可以參考這篇筆記。</p>
+    <content>
+      <![CDATA[<p>之前接案時為了要實現一個動畫效果而學過一點 D3.js，雖然最後沒有派上用場，但當時我寫下一些入門筆記，如果你沒學過 D3.js 而想要嘗試的話，可以參考這篇筆記。</p>
 <a id="more"></a>
 
 <h2 id="什麼是-D3-js"><a href="#什麼是-D3-js" class="headerlink" title="什麼是 D3.js"></a>什麼是 D3.js</h2><blockquote>
@@ -1017,23 +1048,25 @@
 <li><a href="https://ithelp.ithome.com.tw/users/20105602/ironman/1582?page=3" target="_blank" rel="external nofollow noopener noreferrer">讓你資料美美的(d3.js+vue.js) 系列</a></li>
 <li><a href="https://www.oxxostudio.tw/articles/201509/svg-d3-18-enter-update-exit.html" target="_blank" rel="external nofollow noopener noreferrer">SVG D3.js - Enter、Update 和 Exit</a></li>
 </ul>
-]]></content>
-      <categories>
-        <category>D3.js</category>
-      </categories>
-      <tags>
-        <tag>w3HexSchool</tag>
-        <tag>D3.js</tag>
-        <tag>DataDrivenDocuments</tag>
-        <tag>資料視覺化</tag>
-        <tag>長條圖</tag>
-        <tag>SVG</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>D3.js</category>
+    </categories>
+    <tags>
+      <tag>w3HexSchool</tag>
+      <tag>D3.js</tag>
+      <tag>DataDrivenDocuments</tag>
+      <tag>資料視覺化</tag>
+      <tag>長條圖</tag>
+      <tag>SVG</tag>
+    </tags>
   </entry>
   <entry>
     <title>[UX] 講座筆記：工程師必須了解的 UX 設計</title>
     <url>/UI-UX/20200210/3766866311/</url>
-    <content><![CDATA[<p>這篇筆記來自於 2020.2.6 六角學院的線上研討會，講者為獸群之心 / Soking，講者在這一節講座中分享了設計使用者體驗時需要掌握的基本原則，並且以豐富的實務經驗來回答許多學員的發問。</p>
+    <content>
+      <![CDATA[<p>這篇筆記來自於 2020.2.6 六角學院的線上研討會，講者為獸群之心 / Soking，講者在這一節講座中分享了設計使用者體驗時需要掌握的基本原則，並且以豐富的實務經驗來回答許多學員的發問。</p>
 <a id="more"></a>
 
 <h2 id="UX-的起源"><a href="#UX-的起源" class="headerlink" title="UX 的起源"></a>UX 的起源</h2><blockquote>
@@ -1071,21 +1104,23 @@
 <p>Q: 有沒有案子是在 iPad 上面做相關的測試？<br>A: 有，但當時客戶不想單獨測試 iPad，iPad 可以直著看也可以橫著看，所以 UI 有把尺寸設計好就沒問題。</p>
 <p>Q: UI 報價高還是 UX？<br>A: 如果客戶只想做 UI，我們會問他是否有能力自己做出 Wireframe？能做到什麼程度？我們在跟客戶告知我們的專業能力後，通常客戶也願意讓我們同時做 UX 跟 UI。我們現在新客戶都不會接只做 UI 的案子。</p>
 <h2 id="彩蛋：UI-設計師是否該學-HTML-CSS？"><a href="#彩蛋：UI-設計師是否該學-HTML-CSS？" class="headerlink" title="彩蛋：UI 設計師是否該學 HTML CSS？"></a>彩蛋：UI 設計師是否該學 HTML CSS？</h2><p>講者認為 UI 設計師應該要碰 HTML CSS，尤其現在案子要 RWD，如果畫面都只用繪圖軟體做，其實設計師會有盲點，會不知道實際畫面是怎麼變化的。</p>
-]]></content>
-      <categories>
-        <category>UI/UX</category>
-      </categories>
-      <tags>
-        <tag>UX</tag>
-        <tag>userexperience</tag>
-        <tag>使用者體驗</tag>
-        <tag>w3HexSchool</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>UI/UX</category>
+    </categories>
+    <tags>
+      <tag>UX</tag>
+      <tag>userexperience</tag>
+      <tag>使用者體驗</tag>
+      <tag>w3HexSchool</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue CLI 3 使用筆記及如何將專案升級至 CLI 3</title>
     <url>/Vuejs/20200121/3810438936/</url>
-    <content><![CDATA[<p>之前介紹過 Vue CLI 2 的基本用法了，這次來介紹 Vue CLI 3 囉！<br>CLI 3 最讚的地方就是有了視覺介面，在管理專案上更加直覺了，<br>這篇文章就要來介紹如何用 CLI 3 建置專案。</p>
+    <content>
+      <![CDATA[<p>之前介紹過 Vue CLI 2 的基本用法了，這次來介紹 Vue CLI 3 囉！<br>CLI 3 最讚的地方就是有了視覺介面，在管理專案上更加直覺了，<br>這篇文章就要來介紹如何用 CLI 3 建置專案。</p>
 <a id="more"></a>
 
 <h2 id="Vue-CLI-2-跟-3-的差異"><a href="#Vue-CLI-2-跟-3-的差異" class="headerlink" title="Vue CLI 2 跟 3 的差異"></a>Vue CLI 2 跟 3 的差異</h2><ol>
@@ -1189,18 +1224,20 @@
 <ol start="8">
 <li>專案完成後打包：<code>vue build index.vue</code>。</li>
 </ol>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>VueCLI</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>VueCLI</tag>
+    </tags>
   </entry>
   <entry>
     <title>[JS] 講座筆記：函數式程式設計</title>
     <url>/javascript/20200119/2279697082/</url>
-    <content><![CDATA[<p>這篇筆記來自於 2020.1.9 六角學院的線上研討會，講者為蘇泰安老師，老師不只講解了如何善用函數來幫助程式碼更簡潔，也介紹了一些以函數為編寫基礎的語言（例如 Elixir），不過由於我對 Javascript 以外的語言並不了解，所以這篇筆記並不會著墨於其他語言。</p>
+    <content>
+      <![CDATA[<p>這篇筆記來自於 2020.1.9 六角學院的線上研討會，講者為蘇泰安老師，老師不只講解了如何善用函數來幫助程式碼更簡潔，也介紹了一些以函數為編寫基礎的語言（例如 Elixir），不過由於我對 Javascript 以外的語言並不了解，所以這篇筆記並不會著墨於其他語言。</p>
 <a id="more"></a>
 
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在 JavaScript 函式是一級公民，可以傳入另一個函式作為參數。<br>傳入其他函式作為參數的函式稱為 Callback function。<br>而接收其他函式當作自己的參數的則稱為高階函式。</p>
@@ -1224,20 +1261,22 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fooDad</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">i</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + i;</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="keyword">return</span> foo;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> foo = fooDad();</span><br><span class="line"><span class="built_in">console</span>.log(foo(<span class="number">100</span>));  <span class="comment">// 101</span></span><br><span class="line">a = <span class="number">99</span>;</span><br><span class="line"><span class="built_in">console</span>.log(foo(<span class="number">100</span>));  <span class="comment">// 101，不受污染</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="學員提問"><a href="#學員提問" class="headerlink" title="學員提問"></a>學員提問</h2><p>Q: 具名函式 VS 匿名函式的區別？<br>A: 具名函式可提升，匿名不能提升（會 <code>undefined</code>）。</p>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>functionalprogramming</tag>
-        <tag>function</tag>
-        <tag>函式</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>JavaScript</category>
+    </categories>
+    <tags>
+      <tag>functionalprogramming</tag>
+      <tag>function</tag>
+      <tag>函式</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue Router 配置與運作</title>
     <url>/Vuejs/20191226/433566073/</url>
-    <content><![CDATA[<p>在 SPA 的架構下，頁面切換不是由後端操控，而是由前端模擬路由器來替換畫面上的內容。<br>而我們可以透過 Vue Router 來達成這件事。</p>
+    <content>
+      <![CDATA[<p>在 SPA 的架構下，頁面切換不是由後端操控，而是由前端模擬路由器來替換畫面上的內容。<br>而我們可以透過 Vue Router 來達成這件事。</p>
 <a id="more"></a>
 
 <h2 id="Router-是由前端所模擬的路由器"><a href="#Router-是由前端所模擬的路由器" class="headerlink" title="Router 是由前端所模擬的路由器"></a>Router 是由前端所模擬的路由器</h2><p>一個使用 Vue Router 的專案會包含三個元素：</p>
@@ -1321,18 +1360,20 @@
 <li>在元件裡新增 <code>methods</code>，使用 <code>router.push()</code> 方法。<figure class="highlight gradle"><table><tr><td class="code"><pre><span class="line">methods: &#123;</span><br><span class="line">  updatePath() &#123;</span><br><span class="line">    <span class="keyword">this</span>.$router.<span class="keyword">push</span>(<span class="string">'/page/child2'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>VueRouter</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>VueRouter</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue CLI 2 建置與運作</title>
     <url>/Vuejs/20191225/1488994884/</url>
-    <content><![CDATA[<p>雖然 Vue CLI 2 現在已經出到 3 了，但還是把自己學習使用 2 所做的筆記放上來，說不定依然能提供給各位做參考（？</p>
+    <content>
+      <![CDATA[<p>雖然 Vue CLI 2 現在已經出到 3 了，但還是把自己學習使用 2 所做的筆記放上來，說不定依然能提供給各位做參考（？</p>
 <a id="more"></a>
 
 <h2 id="什麼是-Vue-CLI？"><a href="#什麼是-Vue-CLI？" class="headerlink" title="什麼是 Vue CLI？"></a>什麼是 Vue CLI？</h2><ul>
@@ -1412,18 +1453,20 @@
 <figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line">created() &#123;</span><br><span class="line">  <span class="keyword">this</span>.$http.get(<span class="string">'https://randomuser.me/api/'</span>).<span class="keyword">then</span>(<span class="function"><span class="params">(response)</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(response.data);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>vue-axios AJAX 使用方式在<a href="https://www.npmjs.com/package/vue-axios" target="_blank" rel="external nofollow noopener noreferrer">官網</a>有寫。</p>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>VueCLI</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>VueCLI</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue 常用 API</title>
     <url>/Vuejs/20191224/3312282522/</url>
-    <content><![CDATA[<p>Vue 提供的 API 很多，本篇筆記整理了一些常用的 API 用法，應該算得上實用。</p>
+    <content>
+      <![CDATA[<p>Vue 提供的 API 很多，本篇筆記整理了一些常用的 API 用法，應該算得上實用。</p>
 <a id="more"></a>
 
 <h2 id="Vue-extend-及-extends"><a href="#Vue-extend-及-extends" class="headerlink" title="Vue.extend() 及 extends"></a>Vue.extend() 及 extends</h2><p>當數個元件的內容很相近、只有少部分不同時，可以使用 <code>Vue.extend()</code> 建立重複的部分，並在元件中搭配使用 <code>extends</code> 特性來取用 <code>Vue.extend()</code> 的內容。</p>
@@ -1497,18 +1540,20 @@
 <h2 id="使用外部載入套件"><a href="#使用外部載入套件" class="headerlink" title="使用外部載入套件"></a>使用外部載入套件</h2><p>BootstrapVue 是一個結合 Bootstrap 及 Vue.js 的套件（<a href="https://bootstrap-vue.js.org/" target="_blank" rel="external nofollow noopener noreferrer">官網</a>），可以用 CDN 的方式載入，也可以用 Webpack 載入。</p>
 <p>如果使用 Vue Cli 就要使用 Webpack 載入方式：</p>
 <figure class="highlight clean"><table><tr><td class="code"><pre><span class="line"><span class="comment">// CLI 版本請加入以下套用 BootstrapVue</span></span><br><span class="line"><span class="keyword">import</span> BootstrapVue <span class="keyword">from</span> <span class="string">'bootstrap-vue'</span>;</span><br><span class="line">Vue.use(BootstrapVue);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue 元件 - 製作空污城市關注網頁</title>
     <url>/Vuejs/20191222/3102883103/</url>
-    <content><![CDATA[<p>大家還記得元件系列第一篇筆記中，提到的 Demo 嗎？<br>本篇筆記要帶領大家回顧元件系列中所有的觀念，一步一步拆解這個 Demo 該如何製作！</p>
+    <content>
+      <![CDATA[<p>大家還記得元件系列第一篇筆記中，提到的 Demo 嗎？<br>本篇筆記要帶領大家回顧元件系列中所有的觀念，一步一步拆解這個 Demo 該如何製作！</p>
 <a id="more"></a>
 
 <p>首先先把成品放在最前面供參：</p>
@@ -1567,20 +1612,22 @@
 </ol>
 <h3 id="Vue-元件-2"><a href="#Vue-元件-2" class="headerlink" title="Vue 元件"></a>Vue 元件</h3><p>在 <code>computed</code> 新增 <code>airColor()</code>，用 <code>switch</code> 判斷汙染等級的顏色。</p>
 <figure class="highlight kotlin"><table><tr><td class="code"><pre><span class="line">airColor: function()&#123;</span><br><span class="line">  let status = <span class="keyword">this</span>.cardData.Status;</span><br><span class="line">  switch (status) &#123;</span><br><span class="line">    case <span class="string">'普通'</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="string">'status-aqi2'</span>;</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    case <span class="string">'對敏感族群不健康'</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="string">'status-aqi3'</span>;</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    case <span class="string">'對所有族群不健康'</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="string">'status-aqi4'</span>;</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    case <span class="string">'非常不健康'</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="string">'status-aqi5'</span>;</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    case <span class="string">'危害'</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="string">'status-aqi6'</span>;</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>Vue元件</tag>
-        <tag>AJAX</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>Vue元件</tag>
+      <tag>AJAX</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue 元件 - 動態切換元件</title>
     <url>/Vuejs/20191222/2039005974/</url>
-    <content><![CDATA[<p>使用 <code>is</code> 屬性可以在保留語意化的 HTML 标签的同時，也達成與元件标签一樣的效果，更有用的是，使用 <code>v-bind:is</code> 可以動態切換不同的元件。</p>
+    <content>
+      <![CDATA[<p>使用 <code>is</code> 屬性可以在保留語意化的 HTML 标签的同時，也達成與元件标签一樣的效果，更有用的是，使用 <code>v-bind:is</code> 可以動態切換不同的元件。</p>
 <a id="more"></a>
 
 <h2 id="使用-is-顯示單一元件"><a href="#使用-is-顯示單一元件" class="headerlink" title="使用 is 顯示單一元件"></a>使用 is 顯示單一元件</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">// HTML</span><br><span class="line"><span class="comment">&lt;!--以下兩種寫法效果一樣--&gt;</span></span><br><span class="line">// 使用元件标签</span><br><span class="line"><span class="tag">&lt;<span class="name">primary-component</span> <span class="attr">:data</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">primary-component</span>&gt;</span></span><br><span class="line">// 使用 is 屬性</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">is</span>=<span class="string">"primary-component"</span> <span class="attr">:data</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -1591,20 +1638,22 @@
 <figure class="highlight dust"><table><tr><td class="code"><pre><span class="line"><span class="xml">// HTML</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"nav nav-pills"</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="comment">&lt;!-- 用 @click 切換 current 的值 --&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"nav-item"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"nav-link"</span></span></span></span><br><span class="line"><span class="xml">       :class="</span><span class="template-variable">&#123;'active': current == 'primary-component'&#125;</span><span class="xml">"</span></span><br><span class="line"><span class="xml">       href="#" @click.prevent="current = 'primary-component'"&gt;</span></span><br><span class="line"><span class="xml">       藍綠色元件</span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"nav-item"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"nav-link"</span></span></span></span><br><span class="line"><span class="xml">       :class="</span><span class="template-variable">&#123;'active': current == 'danger-component'&#125;</span><span class="xml">"</span></span><br><span class="line"><span class="xml">       href="#" @click.prevent="current = 'danger-component'"&gt;</span></span><br><span class="line"><span class="xml">       紅色元件</span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mt-3"</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="comment">&lt;!-- 動態切換元件 --&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">:is</span>=<span class="string">"current"</span> <span class="attr">:data</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight lasso"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 省略元件及模板的程式碼</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Vue 根實例</span></span><br><span class="line"><span class="built_in">var</span> app = <span class="literal">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  <span class="built_in">data</span>: &#123;</span><br><span class="line">    item: &#123;</span><br><span class="line">      <span class="keyword">header</span>: <span class="string">'這裡是 header'</span>,</span><br><span class="line">      title: <span class="string">'這裡是 title'</span>,</span><br><span class="line">      text: <span class="string">'...'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    current: <span class="string">'primary-component'</span>  <span class="comment">// 當前頁籤</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>Vue元件</tag>
-        <tag>is屬性</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>Vue元件</tag>
+      <tag>is屬性</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue 元件 - 插槽篇</title>
     <url>/Vuejs/20191221/4254408561/</url>
-    <content><![CDATA[<p>使用元件的目的是為了同樣結構的重複使用，但有時我們會需要對元件內容作調整，這時就可以使用插槽來做調整。</p>
+    <content>
+      <![CDATA[<p>使用元件的目的是為了同樣結構的重複使用，但有時我們會需要對元件內容作調整，這時就可以使用插槽來做調整。</p>
 <a id="more"></a>
 
 <h2 id="單一插槽"><a href="#單一插槽" class="headerlink" title="單一插槽"></a>單一插槽</h2><p>當只有一個地方需要修改內容時，使用單一插槽即可。</p>
@@ -1617,19 +1666,21 @@
 <p>注意，<code>v-slot</code> 只能用於 <code>&lt;template&gt;</code> 元素。</p>
 <p><code>&lt;template&gt;</code> 跟 <code>&lt;slot&gt;</code> 标签在 HTML 中都不會被輸出，它們兩個的用途是互相配對，代表這個地方需要在 HTML 中替換成新的內容。<code>&lt;slot&gt;</code> 放置位置在元件模板中，<code>&lt;template&gt;</code> 放置位置在 HTML 中。</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 元件的模板</span></span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"container"</span>&gt;</span><br><span class="line">  &lt;header&gt;</span><br><span class="line">    &lt;slot name=<span class="string">"header"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span></span><br><span class="line">  &lt;<span class="regexp">/header&gt;</span></span><br><span class="line"><span class="regexp">  &lt;main&gt;</span></span><br><span class="line"><span class="regexp">    &lt;slot&gt;&lt;/</span>slot&gt;</span><br><span class="line">  &lt;<span class="regexp">/main&gt;</span></span><br><span class="line"><span class="regexp">  &lt;footer&gt;</span></span><br><span class="line"><span class="regexp">    &lt;slot name="footer"&gt;&lt;/</span>slot&gt;</span><br><span class="line">  &lt;<span class="regexp">/footer&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// HTML</span></span><br><span class="line">&lt;base-layout&gt;</span><br><span class="line">  &lt;template v-slot:header&gt;</span><br><span class="line">    &lt;h1&gt;Here might be a page title&lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>template&gt;</span><br><span class="line"></span><br><span class="line">  &lt;p&gt;A paragraph <span class="keyword">for</span> the main content.&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">  &lt;p&gt;And another one.&lt;/</span>p&gt;</span><br><span class="line"></span><br><span class="line">  &lt;template v-slot:footer&gt;</span><br><span class="line">    &lt;p&gt;Here<span class="string">'s some contact info&lt;/p&gt;</span></span><br><span class="line"><span class="string">  &lt;/template&gt;</span></span><br><span class="line"><span class="string">&lt;/base-layout&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>Vue元件</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>Vue元件</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue 元件 - emit 篇</title>
     <url>/Vuejs/20191220/2032442117/</url>
-    <content><![CDATA[<p>如何從元件傳遞資料到根實例？本篇筆記告訴你～</p>
+    <content>
+      <![CDATA[<p>如何從元件傳遞資料到根實例？本篇筆記告訴你～</p>
 <a id="more"></a>
 
 <h2 id="emit-向外層傳遞事件"><a href="#emit-向外層傳遞事件" class="headerlink" title="$emit 向外層傳遞事件"></a>$emit 向外層傳遞事件</h2><p><code>$emit</code> 除了可以傳遞事件外，也可以傳遞參數。</p>
@@ -1650,19 +1701,21 @@
 <li>元件模板中所綁定的，都是該元件獨有的資料、<code>methods</code>。</li>
 <li>HTML 中的元件标签則是元件資料與根實例資料<strong>互相綁定</strong>的場所。</li>
 </ol>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>$emit()</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>$emit()</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue 元件 - props 篇</title>
     <url>/Vuejs/20191220/3720178681/</url>
-    <content><![CDATA[<p>上一篇我們提到，要從根實例傳資料到元件裡，需要使用 <code>props</code> 特性來傳遞，今天這篇筆記會談談 <code>props</code> 如何實際使用。</p>
+    <content>
+      <![CDATA[<p>上一篇我們提到，要從根實例傳資料到元件裡，需要使用 <code>props</code> 特性來傳遞，今天這篇筆記會談談 <code>props</code> 如何實際使用。</p>
 <a id="more"></a>
 
 <h2 id="在-HTML-放入元件"><a href="#在-HTML-放入元件" class="headerlink" title="在 HTML 放入元件"></a>在 HTML 放入元件</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span>&gt;</span>靜態傳遞<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">photo</span>&gt;</span><span class="tag">&lt;/<span class="name">photo</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span>&gt;</span>動態傳遞<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">photo</span>&gt;</span><span class="tag">&lt;/<span class="name">photo</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -1694,19 +1747,21 @@
 <h2 id="props-值的型別"><a href="#props-值的型別" class="headerlink" title="props 值的型別"></a>props 值的型別</h2><p>預先定義 <code>props</code> 應該傳入哪種型別的資料，避免傳入錯誤的資料。</p>
 <figure class="highlight less"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 原本是這樣寫</span></span><br><span class="line"><span class="selector-tag">Vue</span><span class="selector-class">.component</span>(<span class="string">'prop-type'</span>, &#123;</span><br><span class="line">  <span class="attribute">props</span>: [<span class="string">'cash'</span>],</span><br><span class="line">  <span class="attribute">template</span>: <span class="string">'#propType'</span>,</span><br><span class="line">  <span class="attribute">data</span>: function() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      <span class="attribute">newCash</span>: this.cash</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 預先定義 props 值型別</span></span><br><span class="line"><span class="selector-tag">Vue</span><span class="selector-class">.component</span>(<span class="string">'prop-type'</span>, &#123;</span><br><span class="line">   <span class="attribute">props</span>: &#123;</span><br><span class="line">     <span class="attribute">cash</span>: &#123;</span><br><span class="line">       <span class="attribute">type</span>: Number,</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;,</span><br><span class="line">  <span class="attribute">template</span>: <span class="string">'#propType'</span>,</span><br><span class="line">  <span class="attribute">data</span>: function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> &#123;</span><br><span class="line">      <span class="attribute">newCash</span>: this.cash</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>有時候 <code>props</code> 不會接收到來自外部的值，但如果我們希望它帶有預設值，可以這樣做：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">props</span>: &#123;</span><br><span class="line">  <span class="attribute">cash</span>: &#123;</span><br><span class="line">    type: Number,</span><br><span class="line">    default: 預設值</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>Vue元件</tag>
-      </tags>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">props</span>: &#123;</span><br><span class="line">  <span class="attribute">cash</span>: &#123;</span><br><span class="line">    type: Number,</span><br><span class="line">    default: 預設值</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>Vue元件</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue 元件 - 基礎篇</title>
     <url>/Vuejs/20191219/714316638/</url>
-    <content><![CDATA[<p>Vue 元件是運用 Vue 很核心的部分，此系列將會拆成 4~5 篇文 po 上來。<br>本篇會從元件的基礎開始，順便帶一些有 <code>props</code> 觀念的例子（但 <code>props</code> 的細節會寫在下一篇），最後會附上一個 Demo 供大家參考。</p>
+    <content>
+      <![CDATA[<p>Vue 元件是運用 Vue 很核心的部分，此系列將會拆成 4~5 篇文 po 上來。<br>本篇會從元件的基礎開始，順便帶一些有 <code>props</code> 觀念的例子（但 <code>props</code> 的細節會寫在下一篇），最後會附上一個 Demo 供大家參考。</p>
 <a id="more"></a>
 
 <h2 id="元件的概念"><a href="#元件的概念" class="headerlink" title="元件的概念"></a>元件的概念</h2><p>網頁上不同的區塊可以由不同的元件組成，如果有重複出現的區塊，更可以利用元件來做。</p>
@@ -1730,19 +1785,21 @@
 
 <h2 id="元件內的-data"><a href="#元件內的-data" class="headerlink" title="元件內的 data"></a>元件內的 data</h2><p>因為每個元件的 data 都是獨立的，所以都會有各自的資料狀態，當有需要使用，都需要獨立管理。但是要注意，在元件內使用 <code>data</code> 特性的時候，必須使用 <code>function</code> 來<code>return</code> 一個物件資料到 <code>data</code> 特性裡。</p>
 <h2 id="運用元件製作關注空污城市的網頁"><a href="#運用元件製作關注空污城市的網頁" class="headerlink" title="運用元件製作關注空污城市的網頁"></a>運用元件製作關注空污城市的網頁</h2><p>當元件系列文結束後，就可以做出這個網頁了。</p>
-<iframe src="https://codepen.io/gretema/embed/YzzjMxN?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>Vue元件</tag>
-      </tags>
+<iframe src="https://codepen.io/gretema/embed/YzzjMxN?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>Vue元件</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue 生命週期</title>
     <url>/Vuejs/20191219/1844116139/</url>
-    <content><![CDATA[<p>在學 Vue 的初期不知道生命週期其實也沒什麼關係，不過隨著越學越進階，還是應該了解一下相關的知識比較好。</p>
+    <content>
+      <![CDATA[<p>在學 Vue 的初期不知道生命週期其實也沒什麼關係，不過隨著越學越進階，還是應該了解一下相關的知識比較好。</p>
 <a id="more"></a>
 
 <h2 id="Vue-的生命週期"><a href="#Vue-的生命週期" class="headerlink" title="Vue 的生命週期"></a>Vue 的生命週期</h2><p>Vue 實例擁有一個完整的生命週期，過程中會執行一連串的工作，從開始「創建」、「初始化數據」、「Template 編譯模板」、「DOM 元素掛載」、「資料的渲染與更新」和「卸載」等過程，我們統稱為 Vue 實例的生命週期。<br><img src="https://i.imgur.com/UuiWUiH.png" alt="官方生命週期示意圖"></p>
@@ -1766,19 +1823,21 @@
 <h3 id="mounted-之後才會正確顯示-DOM-與資料"><a href="#mounted-之後才會正確顯示-DOM-與資料" class="headerlink" title="mounted() 之後才會正確顯示 DOM 與資料"></a>mounted() 之後才會正確顯示 DOM 與資料</h3><p>在一開始的 <code>x-template</code> 模板裡面，我們寫了一個 <code>&lt;h4&gt;</code>，它的內容要到 <code>mounted()</code> 階段後才會正確顯示「Hello! Vue data 資料狀態」，因為此時元件 DOM 與資料才會完整掛載在 Vue 實例上。</p>
 <h3 id="保留元件的資料狀態"><a href="#保留元件的資料狀態" class="headerlink" title="保留元件的資料狀態"></a>保留元件的資料狀態</h3><p>前面有提到，在一般情況下，取消渲染（銷毀）元件後如果要再次渲染，生命週期會從 <code>beforeCreate()</code> 重新開始。但在有些情況下，我們希望能在下次渲染時保留之前的資料狀態，此時我們可以用 <code>&lt;keepalive&gt;</code> 标签包住元件，來維持它的生命週期。</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://medium.com/pierceshih/vue-js-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-day14-vue%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F-65bc934dfd47" target="_blank" rel="external nofollow noopener noreferrer">「Vue.js 學習筆記 Day14」- Vue生命週期</a><br><a href="https://cn.vuejs.org/v2/guide/instance.html#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE%E7%A4%BA" target="_blank" rel="external nofollow noopener noreferrer">官方文件：生命周期图示</a></p>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>Vue生命週期</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>Vue生命週期</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] 用 Vue 寫一個 todo-list</title>
     <url>/Vuejs/20191218/266480435/</url>
-    <content><![CDATA[<p>運用已學到的基礎與進階指令，試著寫出一個 todo-list 待辦事項清單吧！</p>
+    <content>
+      <![CDATA[<p>運用已學到的基礎與進階指令，試著寫出一個 todo-list 待辦事項清單吧！</p>
 <a id="more"></a>
 
 <p>先附上成品 Demo，以下會一步步說明該如何實作一個 todo-list。</p>
@@ -1858,19 +1917,21 @@
 <li>在「清除所有任務」<code>&lt;a&gt;</code> 上綁定事件監聽</li>
 <li>在 <code>methods</code> 新增方法，把 <code>todos</code> 宣告為空陣列即可</li>
 </ul>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>todolist</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+      <tag>todolist</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] 進階指令與模板語法 (下)</title>
     <url>/Vuejs/20191218/2429605945/</url>
-    <content><![CDATA[<p>本篇筆記要繼續分享 Vue 中一些指令的進階用法與使用細節，基本上是 Vue 基礎概述篇的延伸，不過也會提到一些新的東西。<br>我超不會寫前言，就不廢話了，直接開始吧！</p>
+    <content>
+      <![CDATA[<p>本篇筆記要繼續分享 Vue 中一些指令的進階用法與使用細節，基本上是 Vue 基礎概述篇的延伸，不過也會提到一些新的東西。<br>我超不會寫前言，就不廢話了，直接開始吧！</p>
 <a id="more"></a>
 
 <h2 id="v-if-v-else-v-else-if"><a href="#v-if-v-else-v-else-if" class="headerlink" title="v-if / v-else / v-else-if"></a>v-if / v-else / v-else-if</h2><p>在一個 HTML 元素上使用 <code>v-if=&quot;data資料&quot;</code>，當資料的值為 <code>true</code> 時才會渲染這個 DOM；而在 <code>v-if</code> 相鄰的 HTML 元素上使用 <code>v-else</code>，就能把 <code>v-if</code> 判斷為 <code>false</code> 的資料渲染在這個 DOM 上。</p>
@@ -1925,18 +1986,20 @@
 <hr>
 <p>參考資料：<a href="https://cn.vuejs.org/v2/guide/events.html" target="_blank" rel="external nofollow noopener noreferrer">Vue.js 官方文件的許多部份</a></p>
 <p>順便補上跟本篇有關的<a href="https://lineargenius.github.io/Vuejs/20191218/150943901/">基礎概述</a>。</p>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] 進階指令與模板語法 (上)</title>
     <url>/Vuejs/20191218/2311842168/</url>
-    <content><![CDATA[<p>了解了 Vue 的基本指令以後，接著繼續來了解指令及模板的進階用法吧！</p>
+    <content>
+      <![CDATA[<p>了解了 Vue 的基本指令以後，接著繼續來了解指令及模板的進階用法吧！</p>
 <a id="more"></a>
 
 <h2 id="v-once-—-單次綁定"><a href="#v-once-—-單次綁定" class="headerlink" title="v-once — 單次綁定"></a>v-once — 單次綁定</h2><p><code>v-text</code> 跟 <code>v-once</code> 同時寫在一個 HTML 元素上，如此一來這個元素的內容在第一次寫入完成後，之後就不會再被變動。</p>
@@ -2009,18 +2072,20 @@
 <p>參照：<a href="https://cn.vuejs.org/v2/style-guide/#%E9%81%BF%E5%85%8D-v-if-%E5%92%8C-v-for-%E7%94%A8%E5%9C%A8%E4%B8%80%E8%B5%B7-%E5%BF%85%E8%A6%81" target="_blank" rel="external nofollow noopener noreferrer">避免 v-if 和 v-for 用在一起（官方文件）</a></p>
 <hr>
 <p>下篇要講的是 <code>v-if</code>、<code>compued</code> 與 <code>watch</code>、表單細節操作、<code>v-on</code> 細節。</p>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue.js 基礎概述 (下)</title>
     <url>/Vuejs/20191218/150943901/</url>
-    <content><![CDATA[<p>上一篇有提到一部份的基礎指令，今天要繼續介紹上一篇沒講完的部分。</p>
+    <content>
+      <![CDATA[<p>上一篇有提到一部份的基礎指令，今天要繼續介紹上一篇沒講完的部分。</p>
 <a id="more"></a>
 
 <h2 id="v-on-—-事件監聽"><a href="#v-on-—-事件監聽" class="headerlink" title="v-on — 事件監聽"></a>v-on — 事件監聽</h2><p>在要監聽的 HTML 元素上加上 <code>v-on: 事件 = &quot;方法名稱()&quot;</code>，在 <code>data</code> 物件同層新增 <code>methods</code> 物件，裡面寫入一個特性，其值為函式（=方法），這個特性的名稱就是要填入 <code>v-on</code> 屬性中的「方法名稱」。 <code>v-on:</code> 的縮寫是 <code>@</code> 。</p>
@@ -2063,18 +2128,20 @@
 <p>雖然我們在 HTML 中寫的元件是用元件名稱當标签，但是用 chrome 開發人員工具看 HTML 結構時會發現，原本的元件标签呈現出來的程式碼會是 template 組出來的內容。</p>
 <hr>
 <p>以上就是 Vue 的基礎指令，這些指令都還有一些使用細節可以延伸來介紹，之後會再整理相關筆記。</p>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Vue] Vue.js 基礎概述 (上)</title>
     <url>/Vuejs/20191217/300157404/</url>
-    <content><![CDATA[<h2 id="Vue-js-簡介"><a href="#Vue-js-簡介" class="headerlink" title="Vue.js 簡介"></a>Vue.js 簡介</h2><blockquote><p>Vue.js 是一款流行的 JavaScript 前端框架，旨在更好地組織與簡化 Web 開發。Vue 所關注的核心是 MVC 模式中的視圖層（View），同時，它也能方便地取得資料更新，並通過組件內部特定的方法實現視圖（View）與模型（Model）的互動。</p>
+    <content>
+      <![CDATA[<h2 id="Vue-js-簡介"><a href="#Vue-js-簡介" class="headerlink" title="Vue.js 簡介"></a>Vue.js 簡介</h2><blockquote><p>Vue.js 是一款流行的 JavaScript 前端框架，旨在更好地組織與簡化 Web 開發。Vue 所關注的核心是 MVC 模式中的視圖層（View），同時，它也能方便地取得資料更新，並通過組件內部特定的方法實現視圖（View）與模型（Model）的互動。</p>
 <footer><strong>——維基百科</strong></footer></blockquote>
 
 <a id="more"></a>
@@ -2121,18 +2188,20 @@
 
 <hr>
 <p>礙於篇幅，還有一些基礎指令沒寫出來，挪到下一篇再介紹 😃</p>
-]]></content>
-      <categories>
-        <category>Vuejs</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Vuejs</category>
+    </categories>
+    <tags>
+      <tag>Vue</tag>
+    </tags>
   </entry>
   <entry>
     <title>[Hexo] 使用 NexT 主題如何在文章中內嵌 Codepen</title>
     <url>/hexo/20191217/2656253328/</url>
-    <content><![CDATA[<p>估狗估不到什麼東西，還好自己有摸索成功，乾脆來發一篇！</p>
+    <content>
+      <![CDATA[<p>估狗估不到什麼東西，還好自己有摸索成功，乾脆來發一篇！</p>
 <a id="more"></a>
 <p>在搬運 Medium 文章過來的過程中遇到一個問題，就是我之前在 Medium 寫文的時候超常 embed Codepen 的，畢竟有些效果真的有 Demo 輔助說明會比較好。<br>但在 hexo NexT 的環境下要怎麼嵌入 Codepen 哩？</p>
 <h2 id="第一次踩雷"><a href="#第一次踩雷" class="headerlink" title="第一次踩雷"></a>第一次踩雷</h2><p>我首先找到這篇文章： <a href="https://www.jianshu.com/p/79e808bbf0a8" target="_blank" rel="external nofollow noopener noreferrer">Hexo NexT：在文章中嵌入 CodePen或 jsFiddle</a>，但是我下載完套件後，按照文中的方式在文章裡插入模板，卻跑出一堆錯誤訊息，整篇文章的內容都無法渲染。</p>
@@ -2151,20 +2220,22 @@
 
 <p>嵌入成功！</p>
 <iframe src="https://codepen.io/gretema/embed/eYOjPJx?height=265&theme-id=default&default-tab=html,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>next</tag>
-        <tag>codepen</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>Hexo</category>
+    </categories>
+    <tags>
+      <tag>Hexo</tag>
+      <tag>next</tag>
+      <tag>codepen</tag>
+    </tags>
   </entry>
   <entry>
     <title>[CSS] CSS3 flex 屬性</title>
     <url>/htmlcss/20191217/214491870/</url>
-    <content><![CDATA[<p>我是在學習 Bootstrap 4 時才真正接觸到這個 CSS3 的屬性，在此之前都是用 float 屬性在排版。但是用 float 的缺點就是清除浮動很麻煩，如果能夠掌握 flex 屬性的話就能解決這個問題，而且真的能夠更加「彈性」地排版。</p>
+    <content>
+      <![CDATA[<p>我是在學習 Bootstrap 4 時才真正接觸到這個 CSS3 的屬性，在此之前都是用 float 屬性在排版。但是用 float 的缺點就是清除浮動很麻煩，如果能夠掌握 flex 屬性的話就能解決這個問題，而且真的能夠更加「彈性」地排版。</p>
 <p>以下．就讓我們來了解 flex 屬性吧！</p>
 <a id="more"></a>
 
@@ -2247,19 +2318,21 @@
 <p>參考資料：<a href="https://wcc723.github.io/css/2017/07/21/css-flex/" target="_blank" rel="external nofollow noopener noreferrer">圖解：CSS Flex 屬性一點也不難</a></p>
 <hr>
 <p>看完這篇，保證你可以加入六角戰隊去<a href="https://hexschool.github.io/flexbox-pirate/index.html#/" target="_blank" rel="external nofollow noopener noreferrer">打海盜</a>！</p>
-]]></content>
-      <categories>
-        <category>HTML&amp;CSS</category>
-      </categories>
-      <tags>
-        <tag>CSS3</tag>
-        <tag>flexbox</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>HTML&amp;CSS</category>
+    </categories>
+    <tags>
+      <tag>CSS3</tag>
+      <tag>flexbox</tag>
+    </tags>
   </entry>
   <entry>
     <title>[SASS] SASS 基礎概念 2</title>
     <url>/SASS/20191217/3307620580/</url>
-    <content><![CDATA[<p>延續上一篇的主題，本篇將整理稍微進階一些、但更接近實作的相關應用，包含如何使用 SASS 來提升響應式設計的開發效率。</p>
+    <content>
+      <![CDATA[<p>延續上一篇的主題，本篇將整理稍微進階一些、但更接近實作的相關應用，包含如何使用 SASS 來提升響應式設計的開發效率。</p>
 <a id="more"></a>
 
 <h2 id="化簡知識庫：-mixin-設定常用語法，-include-召喚出來"><a href="#化簡知識庫：-mixin-設定常用語法，-include-召喚出來" class="headerlink" title="化簡知識庫：@mixin 設定常用語法，@include 召喚出來"></a>化簡知識庫：<code>@mixin</code> 設定常用語法，<code>@include</code> 召喚出來</h2><p>這個語法可以省去一直回想原理跟技巧的時間。</p>
@@ -2298,19 +2371,21 @@
 </blockquote>
 <hr>
 <p>掌握了這兩篇介紹的 SASS 基礎，就相當夠用了。當然，之後如果有機會再吸收一些 SASS 技巧也會繼續分享的。</p>
-]]></content>
-      <categories>
-        <category>SASS</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-        <tag>SASS</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>SASS</category>
+    </categories>
+    <tags>
+      <tag>CSS</tag>
+      <tag>SASS</tag>
+    </tags>
   </entry>
   <entry>
     <title>[SASS] SASS 基礎概念 1</title>
     <url>/SASS/20191217/1546590558/</url>
-    <content><![CDATA[<p>什麼是 SASS？ <del>不是 SARS 哦</del><br>來聊聊它的基本觀念。</p>
+    <content>
+      <![CDATA[<p>什麼是 SASS？ <del>不是 SARS 哦</del><br>來聊聊它的基本觀念。</p>
 <a id="more"></a>
 
 <h2 id="什麼是-SASS？"><a href="#什麼是-SASS？" class="headerlink" title="什麼是 SASS？"></a>什麼是 SASS？</h2><p>SASS 是一種針對 CSS 的腳本程式語言，藉由提供程式語言的特性，例如變數、巢狀結構、混合、函式與擴充（繼承）等等，可以預先對 CSS 進行結構化的工作，最後再編譯可使用於網頁上的 CSS 語法。需要搭配 SASS 解譯器 (如 prepros) 進行撰寫。</p>
@@ -2335,19 +2410,21 @@
 <li>一支 .scss 檔案只單獨處理一件事，例如 reset 寫在一個 .scss 檔，檔名命名為 <code>_reset.scss</code>；首頁樣式寫在另一個檔，檔名命名為 <code>_index.scss</code>。前面加<u>底線</u>很重要，代表那是<strong>合併用</strong>的 sass 檔，理論上並不會編譯出對應的 .css 檔。</li>
 <li>在名為 all 的 .scss 檔裡做統整，用 <code>@import</code>「依序」匯入個別的 .scss 檔。網頁中只會引入 <code>all.scss</code> 編譯出來的 <code>all.css</code>。</li>
 </ol>
-]]></content>
-      <categories>
-        <category>SASS</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-        <tag>SASS</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>SASS</category>
+    </categories>
+    <tags>
+      <tag>CSS</tag>
+      <tag>SASS</tag>
+    </tags>
   </entry>
   <entry>
     <title>[RWD] 響應式網頁 - 實作常見問題與錯誤</title>
     <url>/rwd/20191217/296575981/</url>
-    <content><![CDATA[<p>乳蹄，本篇筆記非常簡潔扼要地列出 3 點 RWD 要注意的問題。</p>
+    <content>
+      <![CDATA[<p>乳蹄，本篇筆記非常簡潔扼要地列出 3 點 RWD 要注意的問題。</p>
 <a id="more"></a>
 
 <h2 id="確認-media-query-斷點"><a href="#確認-media-query-斷點" class="headerlink" title="確認 media query 斷點"></a>確認 media query 斷點</h2><p>先抓熱門的螢幕解析度，例如平板 (768px) 及 iPhone 5 橫式 (569px)，在這兩個解析度之間會有一個斷層，可能在寬度 6xx px 時版面會變得比較難看，此時就為這一段斷層加條件：</p>
@@ -2355,19 +2432,21 @@
 
 <h2 id="media-query-到底要寫在一起還是分開寫"><a href="#media-query-到底要寫在一起還是分開寫" class="headerlink" title="media query 到底要寫在一起還是分開寫"></a>media query 到底要寫在一起還是分開寫</h2><p>同一個 <code>&lt;div&gt;</code> 就寫在一起，包含該 <code>&lt;div&gt;</code> 的子元素。</p>
 <h2 id="不要習慣性寫死高度"><a href="#不要習慣性寫死高度" class="headerlink" title="不要習慣性寫死高度"></a>不要習慣性寫死高度</h2><p>在 PC 版上是可以寫固定高度的，因為版面不會隨螢幕大小而變化。但是要記得在 media query 中多加一行 <code>height: auto</code>，讓內容自適應延伸。</p>
-]]></content>
-      <categories>
-        <category>RWD</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-        <tag>響應式網頁設計</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>RWD</category>
+    </categories>
+    <tags>
+      <tag>CSS</tag>
+      <tag>響應式網頁設計</tag>
+    </tags>
   </entry>
   <entry>
     <title>[RWD] 響應式網頁 - 固定式選單及 off-canvas 選單</title>
     <url>/rwd/20191216/822299504/</url>
-    <content><![CDATA[<p>本篇文章接續上一篇，繼續記錄 RWD 的常用選單語法結構，包含固定式選單及側邊展開（off-canvas）選單等兩種。</p>
+    <content>
+      <![CDATA[<p>本篇文章接續上一篇，繼續記錄 RWD 的常用選單語法結構，包含固定式選單及側邊展開（off-canvas）選單等兩種。</p>
 <a id="more"></a>
 
 <h2 id="固定式選單"><a href="#固定式選單" class="headerlink" title="固定式選單"></a>固定式選單</h2><p>讓使用者在滑動頁面時，表頭永遠在螢幕上方。<br>使用 <code>position: fixed</code>，但要注意頁面內容會被表頭遮住，所以內容區塊要用 <code>padding-top</code> 空出表頭的高度，才不會被遮住部分內容。</p>
@@ -2395,21 +2474,23 @@
 
 <hr>
 <p>好啦，響應式的選單設計就先介紹四種，雖然選單不是響應式設計的全部，但應該算是蠻核心的部分了，其他眉眉角角就等我之後有時間精力再來補寫囉（癱）。</p>
-]]></content>
-      <categories>
-        <category>RWD</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-        <tag>響應式網頁設計</tag>
-        <tag>HTML</tag>
-        <tag>jQuery</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>RWD</category>
+    </categories>
+    <tags>
+      <tag>CSS</tag>
+      <tag>響應式網頁設計</tag>
+      <tag>HTML</tag>
+      <tag>jQuery</tag>
+    </tags>
   </entry>
   <entry>
     <title>[RWD] 響應式網頁 - 多欄多列選單及漢堡選單</title>
     <url>/rwd/20191216/3809709620/</url>
-    <content><![CDATA[<p>本篇文章將記錄 RWD 的常用選單語法結構，包含多行多列選單及漢堡選單等兩種。</p>
+    <content>
+      <![CDATA[<p>本篇文章將記錄 RWD 的常用選單語法結構，包含多行多列選單及漢堡選單等兩種。</p>
 <a id="more"></a>
 
 <h2 id="多欄多列選單排版法：以-3-2-為例"><a href="#多欄多列選單排版法：以-3-2-為例" class="headerlink" title="多欄多列選單排版法：以 3*2 為例"></a>多欄多列選單排版法：以 3*2 為例</h2><h3 id="語法："><a href="#語法：" class="headerlink" title="語法："></a>語法：</h3><h4 id="HTML："><a href="#HTML：" class="headerlink" title="HTML："></a>HTML：</h4><p><code>&lt;ul&gt;&lt;li&gt;</code> 結構，<code>&lt;li&gt;</code> 需要 6 個</p>
@@ -2432,21 +2513,23 @@
 </ol>
 <h3 id="menu-show-為何是加在-body-上"><a href="#menu-show-為何是加在-body-上" class="headerlink" title=".menu-show 為何是加在 body 上"></a>.menu-show 為何是加在 body 上</h3><p>如果 jQ 是在 <code>.menu</code> 上動態加上 <code>class</code> 會怎麼樣呢？</p>
 <p>其實要在哪裡動態加上 <code>class</code>，需要看網頁的樣式怎麼設計。像是有些設計可能不只影響 <code>.menu</code>，還會加上其他的效果，那就必須要加在 <code>body</code> 上。<br>若只有增加彈出選單的效果，那 <code>.menu-show</code> 其實不一定要在 <code>body</code> 上， 加在 <code>.header</code> 、加在 <code>.menu</code> 都可以。</p>
-]]></content>
-      <categories>
-        <category>RWD</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-        <tag>響應式網頁設計</tag>
-        <tag>HTML</tag>
-        <tag>jQuery</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>RWD</category>
+    </categories>
+    <tags>
+      <tag>CSS</tag>
+      <tag>響應式網頁設計</tag>
+      <tag>HTML</tag>
+      <tag>jQuery</tag>
+    </tags>
   </entry>
   <entry>
     <title>[RWD] 響應式網頁 - 常用選單樣式與注意事項</title>
     <url>/rwd/20191216/3160700070/</url>
-    <content><![CDATA[<p>在學習響應式網頁設計（Responsive Web Design）的路上，想記錄一些學習過程跟基礎語法，本篇筆記將從 RWD 常用選單的樣式及實作時的注意事項開始這個系列的旅程。</p>
+    <content>
+      <![CDATA[<p>在學習響應式網頁設計（Responsive Web Design）的路上，想記錄一些學習過程跟基礎語法，本篇筆記將從 RWD 常用選單的樣式及實作時的注意事項開始這個系列的旅程。</p>
 <a id="more"></a>
 
 <h2 id="常用樣式"><a href="#常用樣式" class="headerlink" title="常用樣式"></a>常用樣式</h2><ul>
@@ -2458,19 +2541,21 @@
 <li>抓 320px 為最小值：這是 iPhone 5 、SE 的寬度，大約可以放 20 個字元（一格選項不超過4個字），不過考慮到留白的問題，12~16 個字元就差不多了。</li>
 <li>不放奇數選單：3 個選項的選單還可以剛好用 33% 去處理，5 個選項的選單排起來會很尷尬地空一格出來，所以要與客戶溝通。</li>
 </ul>
-]]></content>
-      <categories>
-        <category>RWD</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-        <tag>響應式網頁設計</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>RWD</category>
+    </categories>
+    <tags>
+      <tag>CSS</tag>
+      <tag>響應式網頁設計</tag>
+    </tags>
   </entry>
   <entry>
     <title>[CSS] 浮動 (float) 與清除浮動 (clear)</title>
     <url>/htmlcss/20191216/714228330/</url>
-    <content><![CDATA[<p>由於老師耳提面命，<code>float</code> 及 <code>clear</code> 是網頁排版的基石之一，所以決定來彙整一下相關的資料，剛好某種程度上也可以承接上一篇的主題。</p>
+    <content>
+      <![CDATA[<p>由於老師耳提面命，<code>float</code> 及 <code>clear</code> 是網頁排版的基石之一，所以決定來彙整一下相關的資料，剛好某種程度上也可以承接上一篇的主題。</p>
 <a id="more"></a>
 
 <h2 id="float-屬性的使用時機"><a href="#float-屬性的使用時機" class="headerlink" title="float 屬性的使用時機"></a>float 屬性的使用時機</h2><p>使用諸如 <code>&lt;div&gt;</code> 之類的區塊元素排版時，預設的排列方式都是由左至右、由上至下。但如果我們今天想要做的是多欄式排版，或是讓多個區塊元素並排時，就需要使用 <code>float</code> 屬性。</p>
@@ -2491,20 +2576,22 @@
 <blockquote>
 <p>使用 <code>clear</code> 屬性須注意，在 <code>&lt;ul&gt;&lt;li&gt;</code> 結構中，必須在 <code>&lt;ul&gt;</code> 父元素清除子元素，沒辦法在 <code>&lt;li&gt;</code> 後面插入 <code>.clearfix</code>。</p>
 </blockquote>
-]]></content>
-      <categories>
-        <category>HTML&amp;CSS</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-        <tag>float</tag>
-        <tag>clear</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>HTML&amp;CSS</category>
+    </categories>
+    <tags>
+      <tag>CSS</tag>
+      <tag>float</tag>
+      <tag>clear</tag>
+    </tags>
   </entry>
   <entry>
     <title>[CSS] 沒有清除浮動，還是沒搞清楚元素特性？</title>
     <url>/htmlcss/20191216/3595727743/</url>
-    <content><![CDATA[<p>昨天在六角學院社團看到有人發問排版問題，因為是我第一次試著替別人 debug 因此特別想記錄下來，順便當作我使用部落格紀錄前端學習之路的濫觴。</p>
+    <content>
+      <![CDATA[<p>昨天在六角學院社團看到有人發問排版問題，因為是我第一次試著替別人 debug 因此特別想記錄下來，順便當作我使用部落格紀錄前端學習之路的濫觴。</p>
 <a id="more"></a>
 
 <hr>
@@ -2522,24 +2609,27 @@
 <p>第二個圖裡，<code>&lt;textarea&gt;</code> 下面多加了一塊 <code>&lt;div&gt;</code>，這個 <code>&lt;div&gt;</code> 的屬性是 <code>block</code> ，所以不是因為加了 <code>clearfix</code>，如果把那個 <code>class</code> 去掉，只留下 <code>&lt;div&gt;</code>，也會有同樣效果。如此，接下來的按鈕便不會前面的原素並排，整個 <code>&lt;form&gt;</code> 加上左邊 <code>&lt;h6&gt;</code> 的寬度後也還在 <code>.faqform</code> 的極限內，版型就正常了。</p>
 <p>第三個圖版型正常的原因，也是因為前面的元素加了 <code>block</code>，而且整個 <code>.form</code> 加上左邊 <code>&lt;h4&gt;</code> 的寬度後還在 <code>.faqform</code> 的極限內。</p>
 <p>此外，盒模型的概念也是很重要，子元素要注意寬度加起來是否會超過包住它的父層， 不然一旦內容寬度超過就一定會跑版了。</p>
-]]></content>
-      <categories>
-        <category>HTML&amp;CSS</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-        <tag>float</tag>
-        <tag>display</tag>
-      </tags>
+]]>
+    </content>
+    <categories>
+      <category>HTML&amp;CSS</category>
+    </categories>
+    <tags>
+      <tag>CSS</tag>
+      <tag>float</tag>
+      <tag>display</tag>
+    </tags>
   </entry>
   <entry>
     <title>被推坑的 Hexo Blog</title>
     <url>/hexo/20191216/2697934891/</url>
-    <content><![CDATA[<p>這陣子專案告了一個段落，有感於自己 Git 操作很不熟，在 Ray 的建議之下開始使用 Hexo 自架部落格，據說對熟悉指令有奇效（？）。<br>結果手忙腳亂地把基本環境一步一步架起來後，Ray 才說他只是不甘心只有自己踩雷、要讓更多人一起踩進來，<del>總之就是報復社會就對惹</del>。<br>總之，以後這邊應該就是放純技術文章、學習筆記，而 Medium 則是放一些軟性文章，例如讀書心得、碎碎唸之類的。</p>
+    <content>
+      <![CDATA[<p>這陣子專案告了一個段落，有感於自己 Git 操作很不熟，在 Ray 的建議之下開始使用 Hexo 自架部落格，據說對熟悉指令有奇效（？）。<br>結果手忙腳亂地把基本環境一步一步架起來後，Ray 才說他只是不甘心只有自己踩雷、要讓更多人一起踩進來，<del>總之就是報復社會就對惹</del>。<br>總之，以後這邊應該就是放純技術文章、學習筆記，而 Medium 則是放一些軟性文章，例如讀書心得、碎碎唸之類的。</p>
 <p>接下來就是要 <del>愚公移山</del> 把 Medium 的技術文移過來了。</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
+]]>
+    </content>
+    <categories>
+      <category>Hexo</category>
+    </categories>
   </entry>
 </search>
